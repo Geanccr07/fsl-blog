@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://firststeplab.com.br',
+  site: 'https://blog.firststeplab.com.br',
   integrations: [sitemap()],
 });
