@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
-import '../../styles/global.css';
-import '../../styles/blog.css';
+import '../styles/global.css';
+import '../styles/blog.css';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -42,7 +42,7 @@ const { Content } = await render(post);
   <!-- Canonical -->
   <link
     rel="canonical"
-    href={`https://firststeplab.com.br/blog/${post.id}/`}
+    href={`https://blog.firststeplab.com.br/${post.id}/`}
   />
 
   <!-- Open Graph -->
@@ -63,12 +63,12 @@ const { Content } = await render(post);
 
   <meta
     property="og:url"
-    content={`https://firststeplab.com.br/blog/${post.id}/`}
+    content={`https://blog.firststeplab.com.br/${post.id}/`}
   />
 
   <meta
     property="og:image"
-    content="https://firststeplab.com.br/og-default.jpg"
+    content="https://blog.firststeplab.com.br/og-default.jpg"
   />
 
   <meta
@@ -94,7 +94,7 @@ const { Content } = await render(post);
 
   <meta
     name="twitter:image"
-    content="https://firststeplab.com.br/og-default.jpg"
+    content="https://blog.firststeplab.com.br/og-default.jpg"
   />
 
 <script type="application/ld+json">
@@ -114,7 +114,7 @@ const { Content } = await render(post);
     datePublished: post.data.date,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://firststeplab.com.br/blog/${post.id}/`
+      "@id": `https://blog.firststeplab.com.br/${post.id}/`
     }
   })}
 </script>
@@ -126,7 +126,7 @@ const { Content } = await render(post);
     <nav class="container">
       <a href="/">Home</a>
       <a href="/sobre">Sobre</a>
-      <a href="/blog" class="active">Blog</a>
+      <a href="/" class="active">Blog</a>
     </nav>
   </header>
 
