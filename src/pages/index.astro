@@ -9,90 +9,77 @@ const posts = await getCollection('blog');
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog | First Step Lab</title>
   </head>
 
-<body class="page-blog">
+  <body class="page-blog">
 
-<body class="page-blog">
+    <header>
+      <nav class="container">
+        <a href="https://firststeplab.com.br/">Home</a>
+        <a href="https://firststeplab.com.br/sobre">Sobre</a>
+        <a href="/" class="active">Nosso Blog</a>
+        <a href="https://firststeplab.com.br/servicos">Nossos Serviços</a>
+      </nav>
+    </header>
 
-<header>
-  <nav class="container">
-    <a href="https://firststeplab.com.br/">Home</a>
-    <a href="https://firststeplab.com.br/sobre">Sobre</a>
-    <a href="/" class="active">Nosso Blog</a>
-    <a href="https://firststeplab.com.br/servicos">Nossos Serviços</a>
-  </nav>
-</header>
+    <main>
 
-  <main>
+      <section class="blog-hero">
+        <div class="container">
 
-    <section class="blog-hero">
-      <div class="container">
+          <h1>Blog da First Step Lab</h1>
 
-        <h1>
-          Blog da First Step Lab
-        </h1>
-
-        <p>
-          Conteúdos sobre carreira, LinkedIn,
-          currículo, processos seletivos, comunicação e
-          crescimento profissional.
-        </p>
-
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-
-        <div class="blog-grid">
-
-          {
-            posts.map((post) => (
-              <article class="blog-card">
-
-                <a href={`/${post.id}/`}>
-
-                  <h2>
-                    {post.data.title}
-                  </h2>
-
-                  <p>
-                    {post.data.description}
-                  </p>
-
-                </a>
-
-                <div class="blog-meta">
-
-                  <span class="blog-date">
-                    {
-                      new Date(post.data.date)
-                        .toLocaleDateString('pt-BR')
-                    }
-                  </span>
-
-                  {
-                    post.data.tags?.map((tag) => (
-                      <span class="blog-tag">
-                        {tag}
-                      </span>
-                    ))
-                  }
-
-                </div>
-
-              </article>
-            ))
-          }
+          <p>
+            Conteúdos sobre carreira, LinkedIn,
+            currículo, processos seletivos, comunicação e
+            crescimento profissional.
+          </p>
 
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section>
+        <div class="container">
 
-  </main>
+          <div class="blog-grid">
 
-</body>
+            {
+              posts.map((post) => (
+                <article class="blog-card">
+
+                  <a href={`/${post.slug}/`}>
+
+                    <h2>{post.data.title}</h2>
+
+                    <p>{post.data.description}</p>
+
+                  </a>
+
+                  <div class="blog-meta">
+
+                    <span class="blog-date">
+                      {new Date(post.data.date).toLocaleDateString('pt-BR')}
+                    </span>
+
+                    {post.data.tags?.map((tag) => (
+                      <span class="blog-tag">{tag}</span>
+                    ))}
+
+                  </div>
+
+                </article>
+              ))
+            }
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+  </body>
 </html>
