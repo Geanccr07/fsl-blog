@@ -103,6 +103,31 @@
   margin-bottom: 1.5rem;
 }
 
+.reading-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  color: #6b7280;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+
+  margin-bottom: 2.2rem;
+
+  padding: 0.45rem 0.9rem;
+
+  background: rgba(255, 90, 31, 0.08);
+
+  border: 1px solid rgba(255, 90, 31, 0.12);
+
+  border-radius: 999px;
+
+  width: fit-content;
+}
+
+
 .blog-post h2 {
   font-size: 2rem;
   margin-top: 3rem;

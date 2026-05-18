@@ -19,6 +19,8 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 
 const { Content } = await render(post);
+const readingTime =
+  Math.ceil(post.body.split(' ').length / 200);
 ---
 
 <html lang="pt-BR">
@@ -101,21 +103,30 @@ const { Content } = await render(post);
   {JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Article",
+
     headline: post.data.title,
     description: post.data.description,
+
+    image: "https://blog.firststeplab.com.br/og-default.jpg",
+
     author: {
       "@type": "Organization",
       name: "First Step Lab"
     },
+
     publisher: {
       "@type": "Organization",
       name: "First Step Lab"
     },
+
     datePublished: post.data.date,
+
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://blog.firststeplab.com.br/${post.id}/`
-    }
+    },
+
+    url: `https://blog.firststeplab.com.br/${post.id}/`
   })}
 </script>
 </head>
@@ -137,6 +148,10 @@ const { Content } = await render(post);
       <article>
 
         <h1>{post.data.title}</h1>
+
+        <p class="reading-time">
+          {readingTime} min de leitura
+        </p>
 
         <Content />
 

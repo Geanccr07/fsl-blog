@@ -3,7 +3,11 @@ import { getCollection } from 'astro:content';
 import '../styles/global.css';
 import '../styles/blog.css';
 
-const posts = await getCollection('blog');
+const posts = (await getCollection('blog'))
+  .sort((a, b) =>
+    new Date(b.data.date).getTime() -
+    new Date(a.data.date).getTime()
+  );
 ---
 
 <html lang="pt-BR">
@@ -11,7 +15,40 @@ const posts = await getCollection('blog');
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Blog | First Step Lab</title>
+    <title>Blog First Step Lab | LinkedIn, Currículo e Carreira</title>
+
+    <meta
+      name="description"
+      content="Conteúdos sobre LinkedIn, carreira, currículo, entrevistas, marketing pessoal e crescimento profissional."
+    />
+
+    <link
+      rel="canonical"
+      href="https://blog.firststeplab.com.br/"
+    />
+    
+    <meta property="og:type" content = "website" />
+
+    <meta
+     property="og:title"
+     content = "Blog | First Step Lab"
+    />
+
+    <meta
+     property="og:description"
+     content = "Conteúdos sobre LinkedIn, currículo, carreira e crescimento profissional."
+    />
+
+    <meta
+     property="og:url"
+     content = "https://blog.firststeplab.com.br/"
+    />
+
+    <meta
+     property="og:image"
+     content = "https://blog.firststeplab.com.br/og-default.jpg"
+    />
+
   </head>
 
   <body class="page-blog">
