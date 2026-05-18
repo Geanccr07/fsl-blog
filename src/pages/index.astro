@@ -49,7 +49,7 @@ const posts = await getCollection('blog');
               posts.map((post) => (
                 <article class="blog-card">
 
-                  <a href={`/${post.slug}/`}>
+                  <a href={`/${post.id}/`}>
 
                     <h2>{post.data.title}</h2>
 
