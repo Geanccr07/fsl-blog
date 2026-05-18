@@ -155,6 +155,21 @@ const readingTime =
 
         <Content />
 
+{
+  post.data.cta_text && post.data.cta_url && (
+    <div class="post-cta">
+
+      <a
+        href={post.data.cta_url}
+        class="post-cta-btn"
+      >
+        {post.data.cta_text}
+      </a>
+
+    </div>
+  )
+}
+
       </article>
 
     </div>

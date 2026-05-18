@@ -201,3 +201,49 @@
   }
 
 }
+
+.post-cta {
+  margin-top: 4rem;
+
+  padding-top: 2rem;
+
+  border-top: 1px solid rgba(0,0,0,0.08);
+
+  display: flex;
+  justify-content: center;
+}
+
+.post-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #FF5A1F,
+    #FF7A47
+  );
+
+  color: white;
+  text-decoration: none;
+
+  font-weight: 600;
+
+  padding: 1rem 1.8rem;
+
+  border-radius: 999px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-shadow:
+    0 12px 30px rgba(255,90,31,0.18);
+}
+
+.post-cta-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 18px 40px rgba(255,90,31,0.24);
+}
