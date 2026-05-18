@@ -1,0 +1,97 @@
+---
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+import '../../styles/blog.css';
+
+const posts = await getCollection('blog');
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog</title>
+  </head>
+
+<body class="page-blog">
+
+<body class="page-blog">
+
+  <header>
+    <nav class="container">
+      <a href="/">Home</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/blog" class="active">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="blog-hero">
+      <div class="container">
+
+        <h1>
+          Blog da First Step Lab
+        </h1>
+
+        <p>
+          Conteúdos sobre carreira, LinkedIn,
+          currículo, marketing, tecnologia e
+          crescimento profissional.
+        </p>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="blog-grid">
+
+          {
+            posts.map((post) => (
+              <article class="blog-card">
+
+                <a href={`/blog/${post.id}/`}>
+
+                  <h2>
+                    {post.data.title}
+                  </h2>
+
+                  <p>
+                    {post.data.description}
+                  </p>
+
+                </a>
+
+                <div class="blog-meta">
+
+                  <span class="blog-date">
+                    {
+                      new Date(post.data.date)
+                        .toLocaleDateString('pt-BR')
+                    }
+                  </span>
+
+                  {
+                    post.data.tags?.map((tag) => (
+                      <span class="blog-tag">
+                        {tag}
+                      </span>
+                    ))
+                  }
+
+                </div>
+
+              </article>
+            ))
+          }
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

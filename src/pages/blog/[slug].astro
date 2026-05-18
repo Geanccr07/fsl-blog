@@ -1,0 +1,150 @@
+---
+import { getCollection, render } from 'astro:content';
+import '../../styles/global.css';
+import '../../styles/blog.css';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  return posts.map((post) => ({
+    params: {
+      slug: post.id,
+    },
+    props: {
+      post,
+    },
+  }));
+}
+
+const { post } = Astro.props;
+
+const { Content } = await render(post);
+---
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    {post.data.title} | First Step Lab
+  </title>
+
+  <meta
+    name="description"
+    content={post.data.description}
+  />
+
+  <!-- Canonical -->
+  <link
+    rel="canonical"
+    href={`https://firststeplab.com.br/blog/${post.id}/`}
+  />
+
+  <!-- Open Graph -->
+  <meta
+    property="og:type"
+    content="article"
+  />
+
+  <meta
+    property="og:title"
+    content={post.data.title}
+  />
+
+  <meta
+    property="og:description"
+    content={post.data.description}
+  />
+
+  <meta
+    property="og:url"
+    content={`https://firststeplab.com.br/blog/${post.id}/`}
+  />
+
+  <meta
+    property="og:image"
+    content="https://firststeplab.com.br/og-default.jpg"
+  />
+
+  <meta
+    property="og:site_name"
+    content="First Step Lab"
+  />
+
+  <!-- Twitter -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content={post.data.title}
+  />
+
+  <meta
+    name="twitter:description"
+    content={post.data.description}
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://firststeplab.com.br/og-default.jpg"
+  />
+
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.data.title,
+    description: post.data.description,
+    author: {
+      "@type": "Organization",
+      name: "First Step Lab"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "First Step Lab"
+    },
+    datePublished: post.data.date,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://firststeplab.com.br/blog/${post.id}/`
+    }
+  })}
+</script>
+</head>
+
+<body class="page-blog">
+
+  <header>
+    <nav class="container">
+      <a href="/">Home</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/blog" class="active">Blog</a>
+    </nav>
+  </header>
+
+  <main class="blog-post">
+
+    <div class="container">
+
+      <article>
+
+        <h1>{post.data.title}</h1>
+
+        <Content />
+
+      </article>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
