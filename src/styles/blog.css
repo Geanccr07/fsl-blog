@@ -165,16 +165,39 @@
    RESPONSIVO
 ===================== */
 @media (max-width: 768px) {
+
   .blog-hero h1 {
     font-size: 2.2rem;
   }
 
+  .blog-post {
+    padding: 2rem 0;
+  }
+
   .blog-post article {
-    padding: 2rem;
-    max-width: 100%;
+    padding: 1.4rem;
+    border-radius: 18px;
   }
 
   .blog-post h1 {
     font-size: 2rem;
+    line-height: 1.2;
   }
+
+  .blog-post h2 {
+    font-size: 1.55rem;
+    line-height: 1.3;
+  }
+
+  .blog-post h3 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+
+  .blog-post p,
+  .blog-post li {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
 }
