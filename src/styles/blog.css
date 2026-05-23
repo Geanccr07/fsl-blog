@@ -364,7 +364,7 @@
 .table-of-contents h2 {
   font-size: 1.1rem;
 
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 
   color: #ff7b00;
 }
@@ -378,13 +378,13 @@
 }
 
 .table-of-contents li + li {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .table-of-contents a {
   text-decoration: none;
 
-  color: #333;
+  color: #55524f;
 
   transition: 0.2s;
 }
