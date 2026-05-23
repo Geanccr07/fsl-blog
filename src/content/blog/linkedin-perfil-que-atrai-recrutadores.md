@@ -2,8 +2,10 @@
 title: "Como montar um perfil no LinkedIn que atrai recrutadores de verdade"
 description: "Descubra como estruturar seu perfil no LinkedIn com palavras-chave, narrativa consistente e experiências que convencem recrutadores em segundos."
 date: 2025-05-17
+author: "Gean Carlos"
+authorRole: "Growth Analyst | First Step Lab"
+authorImage: "/gean.jpg"
 tags: ["linkedin", "carreira", "emprego", "recrutamento", "perfil profissional"]
-image: "/og-default.jpg"
 ---
 
 ## Introdução

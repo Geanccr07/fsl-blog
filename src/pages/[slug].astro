@@ -142,40 +142,80 @@ const readingTime =
   </nav>
 </header>
 
-  <main class="blog-post">
+<main class="blog-post">
 
-    <div class="container">
+  {
+    post.data.image && (
+      <img
+        src={post.data.image}
+        alt={post.data.title}
+        class="hero-full"
+      />
+    )
+  }
 
-      <article>
+  <div class="container">
+
+    <article>
+
+      <section class="article-hero">
 
         <h1>{post.data.title}</h1>
 
-        <p class="reading-time">
-          {readingTime} min de leitura
+        <div class="author-box">
+
+          <img
+            src={post.data.authorImage}
+            alt={post.data.author}
+            class="author-avatar"
+          />
+
+          <div class="author-info">
+
+            <strong>
+              {post.data.author}
+            </strong>
+
+            <span>
+              {post.data.authorRole}
+            </span>
+
+            <span>
+              {readingTime} min de leitura
+            </span>
+
+          </div>
+
+        </div>
+
+        <p class="article-description">
+          {post.data.description}
         </p>
 
-        <Content />
+      </section>
 
-{
-  post.data.cta_text && post.data.cta_url && (
-    <div class="post-cta">
+      <Content />
 
-      <a
-        href={post.data.cta_url}
-        class="post-cta-btn"
-      >
-        {post.data.cta_text}
-      </a>
+      {
+        post.data.cta_text && post.data.cta_url && (
+          <div class="post-cta">
 
-    </div>
-  )
-}
+            <a
+              href={post.data.cta_url}
+              class="post-cta-btn"
+            >
+              {post.data.cta_text}
+            </a>
 
-      </article>
+          </div>
+        )
+      }
 
-    </div>
+    </article>
 
-  </main>
+  </div>
+
+</main>
 
 </body>
 </html>
