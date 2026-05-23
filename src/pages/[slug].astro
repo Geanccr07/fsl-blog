@@ -99,8 +99,9 @@ const readingTime =
     content="https://blog.firststeplab.com.br/og-default.jpg"
   />
 
-<script type="application/ld+json">
-  {JSON.stringify({
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Article",
 
@@ -128,7 +129,7 @@ const readingTime =
 
     url: `https://blog.firststeplab.com.br/${post.id}/`
   })}
-</script>
+/>
 </head>
 
 <body class="page-blog">
