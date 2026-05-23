@@ -294,38 +294,32 @@
 .author-box {
   display: flex;
   align-items: center;
-
-  gap: 1rem;
-
-  margin-top: 1.5rem;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
 
 .author-avatar {
-  width: 64px;
-  height: 64px;
-
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-
   object-fit: cover;
-
-  border: 3px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(255, 123, 0, 0.5);
 }
 
 .author-info {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 
 .author-info strong {
-  color: rgb(62, 60, 60);
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .author-info span {
-  color: rgba(54, 52, 52, 0.85);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
 }
-
 .hero-banner {
   width: 100%;
   height: 380px;
@@ -347,12 +341,10 @@
 }
 
 @media (max-width: 768px) {
-
   .article-hero h1 {
-    font-size: 2.1rem;
-    line-height: 1.15;
+    font-size: 2rem;
+    line-height: 1.2;
   }
-
 }
 
 .table-of-contents {
@@ -485,9 +477,8 @@ html {
 .author-box {
   display: flex;
   align-items: center;
-  gap: 1rem;
-
-  margin-top: 1.5rem;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
 
 
