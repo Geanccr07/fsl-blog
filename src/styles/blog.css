@@ -340,3 +340,11 @@
   margin-left: calc(50% - 50vw);
 }
 
+@media (max-width: 768px) {
+
+  .article-hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+  }
+
+}
