@@ -7,19 +7,27 @@ export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
   return posts.map((post) => ({
-    params: {
-      slug: post.id,
-    },
-    props: {
-      post,
-    },
+    params: { slug: post.id },
+    props: { post },
   }));
 }
 
 const { post } = Astro.props;
+const { Content, headings } = await render(post);
 
-const { Content, headings } = await render(post);const readingTime =
-  Math.ceil(post.body.split(' ').length / 200);
+const readingTime = Math.ceil(post.body.split(' ').length / 200);
+
+// LÓGICA DE SEO PARA O TÍTULO
+// 1. Usa o seoTitle (se você criar um específico), senão usa o título padrão
+const baseTitle = post.data.seoTitle || post.data.title;
+
+// 2. Monta o título com a marca
+let pageTitle = `${baseTitle} | First Step Lab`;
+
+// 3. Se passar de 60 caracteres, remove o nome da marca para não estourar no Google
+if (pageTitle.length > 60) {
+  pageTitle = baseTitle; 
+}
 ---
 
 <html lang="pt-BR">
@@ -31,9 +39,7 @@ const { Content, headings } = await render(post);const readingTime =
     content="width=device-width, initial-scale=1.0"
   />
 
-  <title>
-    {post.data.title} | First Step Lab
-  </title>
+<title>{pageTitle}</title>
 
   <meta
     name="description"
