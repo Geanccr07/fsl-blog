@@ -11,7 +11,7 @@ cta_text: "Quero ajuda com meu currículo"
 cta_url: "https://firststeplab.com.br/#leadForm"
 ---
 
-## Currículo enviado, silêncio total: o que está errado e como corrigir
+## Currículo enviado, silêncio total
 
 Você manda currículo. Espera. Nada. Manda mais. Ajusta alguma coisa. Manda de novo. Ainda nada.
 
