@@ -7,7 +7,6 @@ authorRole: "Growth Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Vagas escondidas: O que são e como encontrar"
 tags: ["vagas escondidas", "busca de emprego", "LinkedIn", "primeiro emprego", "recolocação profissional"]
-image: "/og-default.jpg"
 cta_text: "Quero ter acesso gratuito"
 cta_url: "https://firststeplab.com.br/#leadForm"
 ---
