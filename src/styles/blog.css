@@ -318,69 +318,121 @@ html {
 }
 
 /* ==========================================================================
-   7. COMPONENTES: BIO DO AUTOR (Fim do artigo)
+   7. BIO DO AUTOR (Fim do artigo)
    ========================================================================== */
-.author-bio {
-  margin-top: 4rem;
+
+.author-bio-wrapper {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 5rem;
   background: #fff3ec;
-  border-left: 4px solid #ff7b00;
-  padding: 2rem;
-  border-radius: 16px;
-  display: flex; /* Mudança para ficar lado a lado e ocupar menos altura */
-  align-items: flex-start;
-  gap: 1.5rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.author-bio {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 3rem;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.author-bio-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding-right: 3rem;
+  border-right: 1px solid rgba(255,123,0,0.25);
 }
 
 .author-bio-avatar {
-  width: 72px; /* Reduzido de 110px para ocupar menos espaço */
-  height: 72px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ff7b00;
-  flex-shrink: 0;
+
+  border: 4px solid rgba(255,123,0,0.15);
+
+  margin-bottom: 1rem;
 }
 
-.author-bio-content h2 {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #ff7b00;
-  margin-top: 0;
-  margin-bottom: 4px;
-}
-
-.author-bio-content h3 {
-  font-size: 1.3rem;
+.author-bio-meta h3 {
+  margin: 0;
+  font-size: 1.7rem;
   color: #111827;
-  margin-top: 0;
-  margin-bottom: 12px;
+  line-height: 1.2;
 }
 
-.author-bio-content p {
-  margin-bottom: 16px;
-  color: #4b5563;
-  font-size: 1rem;
-  line-height: 1.6;
+.author-bio-meta span {
+  display: block;
+  margin-top: 0.5rem;
+
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.author-bio-right h2 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.author-bio-right p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #374151;
+
+  max-width: 900px;
+
+  margin-bottom: 2rem;
 }
 
 .author-links {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
 .author-links a {
-  color: #ff7b00;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.85rem 1.4rem;
+
+  border-radius: 999px;
+
+  background: #ff7b00;
+  color: white;
+
+  text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
-  text-decoration: none;
-  transition: color 0.2s;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-shadow: 0 8px 20px rgba(255,123,0,0.18);
 }
 
 .author-links a:hover {
-  color: #e66a00;
-  text-decoration: underline;
+  transform: translateY(-2px);
+  opacity: 0.95;
 }
+
 
 /* ==========================================================================
    8. RESPONSIVIDADE (MOBILE)
@@ -483,4 +535,58 @@ html {
     width: 100%; 
     max-width: 320px; 
   }
+}
+
+  /* BIO DO AUTOR (Fim do artigo) */
+@media (max-width: 768px) {
+
+  .author-bio-wrapper {
+    margin-top: 3rem;
+  }
+
+  .author-bio {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    padding: 2.5rem 1.5rem;
+  }
+
+  .author-bio-left {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,123,0,0.2);
+
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  .author-bio-avatar {
+    width: 88px;
+    height: 88px;
+  }
+
+  .author-bio-meta h3 {
+    font-size: 1.4rem;
+  }
+
+  .author-bio-right {
+    text-align: center;
+  }
+
+  .author-bio-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .author-bio-right p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .author-links {
+    justify-content: center;
+  }
+
+  .author-links a {
+    width: 100%;
+  }
+
 }

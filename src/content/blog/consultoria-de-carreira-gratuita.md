@@ -6,7 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Consultoria de carreira gratuita"
-tags: ["consultoria de carreira", "carreira", "primeiro emprego", "recolocação profissional", "mentoria gratuita"]
+tags: ["consultoria de carreira", "carreira", "recolocação profissional", "mentoria gratuita"]
 cta_text: "Quero minha consultoria gratuita"
 cta_url: "https://firststeplab.com.br/#leadForm"
 
