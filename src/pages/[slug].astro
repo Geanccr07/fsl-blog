@@ -17,12 +17,11 @@ const { Content, headings } = await render(post);
 
 const readingTime = Math.ceil(post.body.split(' ').length / 200);
 
-// LÓGICA DE SEO PARA O TÍTULO
 // 1. Usa o seoTitle (se você criar um específico), senão usa o título padrão
 const baseTitle = post.data.seoTitle || post.data.title;
 
 // 2. Monta o título com a marca
-let pageTitle = `${baseTitle} | First Step Lab`;
+let pageTitle = `${baseTitle}`;
 
 // 3. Se passar de 60 caracteres, remove o nome da marca para não estourar no Google
 if (pageTitle.length > 60) {
