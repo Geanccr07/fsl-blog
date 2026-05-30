@@ -80,7 +80,7 @@ Se não vier resposta ao follow-up, você pode mandar mais uma mensagem depois d
 
 Isso acontece com mais frequência do que parece.
 
-Meu primeiro cargo em marketing não foi conquista direta. Não era exatamente o perfil que eles buscavam de início, e haviam outros candidatos mais óbvios para a vaga. Consegui mesmo assim, por uma combinação de timing, de como me apresentei e de circunstâncias que eu não controlava nem sabia que existiam na época. Só entendi o que tinha acontecido bastante depois.
+Meu primeiro cargo em marketing não foi conquista direta. Não era exatamente o perfil que eles buscavam no início, e havia outro candidato mais adequado para a vaga. Consegui mesmo assim, por uma combinação de timing, de como me apresentei e de circunstâncias que eu não controlava nem sabia que existiam na época. Só entendi o que tinha acontecido depois.
 
 Conheço pessoas próximas que receberam proposta semanas depois de acharem que tinham reprovado. O candidato escolhido recusou a oferta. O processo reabriu. Elas estavam disponíveis, continuaram se movimentando, e pegaram a oportunidade.
 
