@@ -14,7 +14,7 @@ cta_url: "https://firststeplab.com.br/#leadForm"
 
 ## Você checou o e-mail de novo. E de novo.
 
-O celular está na mesa de lado. Você tenta não olhar, mas olha.
+O celular está na mesa ao lado. Você tenta não olhar, mas olha.
 
 Abre o e-mail. Nada. Fecha. Abre o LinkedIn. Nada. Vai fazer outra coisa, não consegue. Fica pensando se deveria mandar uma mensagem, se parece desesperado, se já passou tempo demais ou de menos. Dorme pensando nisso. Acorda pensando nisso. Às vezes você está no meio de outra coisa completamente diferente, e de repente o processo volta à cabeça.
 
