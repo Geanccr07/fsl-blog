@@ -3,7 +3,7 @@ title: "Consultoria de carreira gratuita: o que é, como funciona e onde encontr
 description: "Entenda o que é consultoria de carreira, para quem faz sentido, como funciona na prática e onde encontrar opções gratuitas e confiáveis."
 date: 2025-05-18
 author: "Gean Carlos"
-authorRole: "Growth Analyst | First Step Lab"
+authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Consultoria de carreira gratuita"
 tags: ["consultoria de carreira", "carreira", "recolocação profissional", "mentoria gratuita"]

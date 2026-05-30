@@ -3,7 +3,7 @@ title: "Vagas escondidas: como encontrar oportunidades que a maioria dos candida
 description: "A aba de vagas do LinkedIn é o lugar mais concorrido da busca por emprego. Veja como encontrar oportunidades fora da rota padrão e com muito menos concorrência."
 date: 2025-05-27
 author: "Gean Carlos"
-authorRole: "Growth Analyst | First Step Lab"
+authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Vagas escondidas: O que são e como encontrar"
 tags: ["vagas escondidas", "busca de emprego", "LinkedIn", "primeiro emprego", "recolocação profissional"]

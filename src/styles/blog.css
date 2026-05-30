@@ -10,7 +10,7 @@ html {
 }
 
 /* ==========================================================================
-   2. HERO DO BLOG E GRID DE POSTS (Página de Listagem)
+   2. HERO DO BLOG E GRID DE POSTS (Raíz)
    ========================================================================== */
 .blog-hero {
   padding: 5rem 0 3rem;
@@ -33,8 +33,8 @@ html {
 
 .blog-grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding-bottom: 5rem;
 }
 
@@ -49,7 +49,7 @@ html {
 
 .blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 50px 40px rgba(0,0,0,0.08);
 }
 
 .blog-card a {
@@ -82,8 +82,8 @@ html {
 }
 
 .blog-tag {
-  background: var(--primary-soft, #fff3ec);
-  color: var(--primary, #ff7b00);
+  background: #1F4E5F;
+  color: #fff3ec;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -105,7 +105,7 @@ html {
 }
 
 .blog-post article {
-  max-width: 840px; /* Reduzido levemente para o padrão Medium (leitura ideal) */
+  max-width: 840px; /* Reduzido levemente */
   margin: 0 auto;
   background: white;
   padding: 3rem 4rem 4rem;
@@ -119,7 +119,7 @@ html {
   object-fit: cover;
   display: block;
   margin-left: calc(50% - 50vw);
-  margin-bottom: -3rem; /* Faz o artigo sobrepor a imagem levemente */
+  margin-bottom: -3rem; 
   position: relative;
   z-index: -1;
 }
@@ -155,17 +155,17 @@ html {
 
 .article-description {
   margin-top: 1rem;
-  color: #4b5563; /* Corrigido de branco para cinza escuro */
+  color: #4b5563; 
   font-size: 1.15rem;
   line-height: 1.6;
   max-width: 800px;
 }
 
-/* Topo: Informações do Autor (Compacto) */
+/* Topo: Informações do Autor */
 .author-box {
   display: flex;
   align-items: center;
-  gap: 0.8rem; /* Reduzido */
+  gap: 0.8rem; 
   margin-top: 1.5rem;
 }
 
@@ -174,7 +174,7 @@ html {
   height: 44px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(255, 123, 0, 0.2); /* Borda mais sutil */
+  border: 2px solid #1F4E5F; 
 }
 
 .author-info {
@@ -185,7 +185,7 @@ html {
 
 .author-info strong {
   font-size: 0.95rem;
-  color: #111827;
+  color: #1F4E5F;
   line-height: 1.2;
 }
 
@@ -253,7 +253,7 @@ html {
    ========================================================================== */
 .table-of-contents {
   background: #fdfdfd;
-  border-left: 4px solid #ff7b00;
+  border-left: 5px solid #1F4E5F;
   padding: 1.5rem;
   margin: 2.5rem 0;
   border-radius: 0 12px 12px 0;
@@ -266,7 +266,7 @@ html {
   letter-spacing: 0.5px;
   margin-top: 0;
   margin-bottom: 12px;
-  color: #ff7b00;
+  color: #1F4E5F;
 }
 
 .table-of-contents ul {
@@ -287,7 +287,7 @@ html {
 }
 
 .table-of-contents a:hover {
-  color: #ff7b00;
+  color: #0d536d;
 }
 
 .post-cta {
@@ -302,7 +302,7 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #FF5A1F, #FF7A47);
+  background: linear-gradient(135deg, #FF5A1F, #fd8f63);
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -314,7 +314,7 @@ html {
 
 .post-cta-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(255,90,31,0.3);
+  box-shadow: 0 16px 35px rgba(255,90,31,0.3);
 }
 
 /* ==========================================================================
@@ -324,7 +324,7 @@ html {
 .author-bio-wrapper {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  margin-top: 5rem;
+  margin-top: 3rem;
   background: #fff3ec;
   border-top: 1px solid rgba(0,0,0,0.05);
   border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -348,7 +348,7 @@ html {
   text-align: center;
 
   padding-right: 3rem;
-  border-right: 1px solid rgba(255,123,0,0.25);
+  border-right: 1px solid #1F4E5F;
 }
 
 .author-bio-avatar {
@@ -357,7 +357,7 @@ html {
   border-radius: 50%;
   object-fit: cover;
 
-  border: 4px solid rgba(255,123,0,0.15);
+  border: 3px solid #1F4E5F;
 
   margin-bottom: 1rem;
 }
@@ -463,7 +463,7 @@ html {
   }
 
   .article-hero h1 {
-    font-size: 1.85rem; /* Ajuste agressivo conforme solicitado (entre 1.7 e 2) */
+    font-size: 1.85rem; /* Ajuste agressivo */
     line-height: 1.3;
     margin-bottom: 0.8rem;
   }
