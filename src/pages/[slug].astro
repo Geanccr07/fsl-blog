@@ -27,6 +27,8 @@ let pageTitle = `${baseTitle}`;
 if (pageTitle.length > 60) {
   pageTitle = baseTitle; 
 }
+
+console.log("DADOS DO POST:", post.data);
 ---
 
 <html lang="pt-BR">
@@ -173,15 +175,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 
   <div class="container">
-
     <article>
-
       <section class="article-hero">
-
         <h1>{post.data.title}</h1>
 
         <div class="author-box">
-
           <img
             src={post.data.authorImage}
             alt={post.data.author}
@@ -189,134 +187,160 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           />
 
           <div class="author-info">
-
-            <strong>
-              {post.data.author}
-            </strong>
-
-            <span>
-              {post.data.authorRole}
-            </span>
-
-            <span>
-              {readingTime} min de leitura
-            </span>
-
+            <strong>{post.data.author}</strong>
+            <span>{post.data.authorRole}</span>
+            <span>{readingTime} min de leitura</span>
           </div>
-
         </div>
 
         <p class="article-description">
           {post.data.description}
         </p>
 
+        {post.data.audio_url && (
+          <div class="audio-player-container">
+            <audio id="blog-audio" src={post.data.audio_url}></audio>
+        
+            <button id="btn-listen" class="audio-btn">
+              <svg class="icon-play" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause hidden" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              <span id="audio-text">Ouvir áudio do artigo</span>
+            </button>
+          </div>
+        )}
       </section>
 
-{
-  headings.length > 0 && (
-    <aside class="table-of-contents">
-
-      <h2>Neste artigo</h2>
-
-      <ul>
-        {
-          headings
-            .filter(h => h.depth === 2)
-            .map(h => (
-              <li>
-                <a href={`#${h.slug}`}>
-                  {h.text}
-                </a>
-              </li>
-            ))
-        }
-      </ul>
-
-    </aside>
-  )
-}
+      {
+        headings.length > 0 && (
+          <aside class="table-of-contents">
+            <h2>Neste artigo</h2>
+            <ul>
+              {
+                headings
+                  .filter(h => h.depth === 2)
+                  .map(h => (
+                    <li>
+                      <a href={`#${h.slug}`}>{h.text}</a>
+                    </li>
+                  ))
+              }
+            </ul>
+          </aside>
+        )
+      }
 
       <Content />
 
       {
         post.data.cta_text && post.data.cta_url && (
           <div class="post-cta">
-
-            <a
-              href={post.data.cta_url}
-              class="post-cta-btn"
-            >
+            <a href={post.data.cta_url} class="post-cta-btn">
               {post.data.cta_text}
             </a>
-
           </div>
         )
       }
-
-
-</article>
-
-<section class="author-bio-wrapper">
-
-  <div class="author-bio">
-
-    <div class="author-bio-left">
-
-      <img
-        src="/gean.jpg"
-        alt="Gean Carlos"
-        class="author-bio-avatar"
-      />
-
-      <div class="author-bio-meta">
-
-        <h3>Gean Carlos</h3>
-
-        <span>Growth Marketing Analyst • First Step Lab</span>
-
-      </div>
-
-    </div>
-
-    <div class="author-bio-right">
-
-      <h2>Quem escreveu este artigo</h2>
-
-      <p>
-        Gean Carlos é Analista de Growth e fundador da First Step Lab.
-        Compartilha conteúdos sobre LinkedIn, currículo, entrevistas
-        e estratégias de carreira para ajudar profissionais a conquistarem vagas.
-      </p>
-
-      <div class="author-links">
-
-        <a
-          href="https://www.linkedin.com/in/gean-carlos-ribeiro/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-
-        <a
-          href="https://firststeplab.com.br/#leadForm"
-          target="_blank"
-        >
-          Comunidade gratuita
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
     </article>
+  </div> <!-- CORREÇÃO: Container fechado aqui para isolar o artigo -->
 
-  </div>
+  <!-- A Bio do autor agora está livre no escopo do <main>, evitando bugs de scroll lateral -->
+  <section class="author-bio-wrapper">
+    <div class="author-bio">
+      <div class="author-bio-left">
+        <img src="/gean.jpg" alt="Gean Carlos" class="author-bio-avatar" />
+        <div class="author-bio-meta">
+          <h3>Gean Carlos</h3>
+          <span>Growth Marketing Analyst • First Step Lab</span>
+        </div>
+      </div>
+
+      <div class="author-bio-right">
+        <h2>Quem escreveu este artigo</h2>
+        <p>
+          Gean Carlos é Analista de Growth e fundador da First Step Lab.
+          Compartilha conteúdos sobre LinkedIn, currículo, entrevistas
+          e estratégias de carreira para ajudar professionals a conquistarem vagas.
+        </p>
+
+        <div class="author-links">
+          <a href="https://www.linkedin.com/in/gean-carlos-ribeiro/" target="_blank">LinkedIn</a>
+          <a href="https://firststeplab.com.br/#leadForm" target="_blank">Comunidade gratuita</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
+
+<script is:inline>
+  const audio = document.getElementById('blog-audio');
+  const btn = document.getElementById('btn-listen');
+  const textLabel = document.getElementById('audio-text');
+  const iconPlay = document.querySelector('.icon-play');
+  const iconPause = document.querySelector('.icon-pause');
+
+  if (audio && btn) {
+    let hasStarted = false;
+    let milestones = { 25: false, 50: false, 75: false, 90: false };
+    const articleTitle = document.title;
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        iconPlay.classList.add('hidden');
+        iconPause.classList.remove('hidden');
+        textLabel.textContent = 'Pausar áudio';
+
+        // TRACKING: audio_start
+        if (!hasStarted) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'audio_start',
+            audio_title: articleTitle,
+            audio_url: audio.src
+          });
+          hasStarted = true;
+        }
+      } else {
+        audio.pause();
+        iconPlay.classList.remove('hidden');
+        iconPause.classList.add('hidden');
+        textLabel.textContent = 'Continuar ouvindo';
+      }
+    });
+
+    audio.addEventListener('ended', () => {
+      iconPlay.classList.remove('hidden');
+      iconPause.classList.add('hidden');
+      textLabel.textContent = 'Ouvir novamente';
+      
+      // TRACKING: 100% Completo
+      window.dataLayer.push({
+        event: 'audio_progress',
+        audio_title: articleTitle,
+        audio_percent: 100
+      });
+    });
+
+    // TRACKING: Progresso com trava de segurança para NaN / Infinity
+    audio.addEventListener('timeupdate', () => {
+      if (audio.duration && !isNaN(audio.duration) && audio.duration > 0) { // CORREÇÃO AQUI
+        const percentage = Math.floor((audio.currentTime / audio.duration) * 100);
+        
+        [25, 50, 75, 90].forEach(marker => {
+          if (percentage >= marker && !milestones[marker]) {
+            milestones[marker] = true;
+            window.dataLayer.push({
+              event: 'audio_progress',
+              audio_title: articleTitle,
+              audio_percent: marker
+            });
+          }
+        });
+      }
+    });
+  }
+</script>
 
 </body>
 </html>

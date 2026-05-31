@@ -196,6 +196,42 @@ html {
 }
 
 /* ==========================================================================
+   4. Botão de áudio
+   ========================================================================== */
+
+.audio-player-container {
+  margin-top: 1.5rem;
+}
+
+.audio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #3f6c7c;
+  color: #f9fafb; 
+  border: 1px solid var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.audio-btn:hover {
+  background: #1F4E5F;
+  transform: translateY(-1px);
+}
+
+.audio-btn svg {
+  flex-shrink: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ==========================================================================
    5. TIPOGRAFIA DO CONTEÚDO (Corpo do Artigo)
    ========================================================================== */
 .blog-post h2 {

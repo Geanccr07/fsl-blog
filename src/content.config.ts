@@ -22,6 +22,8 @@ const blog = defineCollection({
 
     image: z.string().optional(),
 
+    audio_url: z.string().optional(),
+
     cta_text: z.string().optional(),
     cta_url: z.string().optional(),
   }),
