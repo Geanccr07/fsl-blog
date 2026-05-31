@@ -28,7 +28,6 @@ if (pageTitle.length > 60) {
   pageTitle = baseTitle; 
 }
 
-console.log("DADOS DO POST:", post.data);
 ---
 
 <html lang="pt-BR">
@@ -337,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       iconPause.classList.add('hidden');
       textLabel.textContent = 'Ouvir novamente';
       
-      // TRACKING: 100% Completo
+      // TRACKING: 
       window.dataLayer.push({
         event: 'audio_progress',
         audio_title: articleTitle,
