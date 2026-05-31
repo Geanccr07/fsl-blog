@@ -1,4 +1,6 @@
-
+/* ==========================================================================
+   1. RESET E VARIÁVEIS GLOBAIS
+   ========================================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -9,139 +11,55 @@ html, body {
   overflow-x: hidden;
 }
 
-
 :root {
-  --primary: #FF5A1F;
-  --primary-soft: rgba(255, 90, 31, 0.15);
+  /* Cores Principais da Marca */
+  --orange-main: #FF7B00;
+  --orange-deep: #FF5900;
+  --teal-deep: #1F4E5F;
+  
+  /* Neutros Premium */
   --black: #0B0B0B;
   --white: #FFFFFF;
   --gray-text: #4B5563;
   --gray-bg: #F3F4F6;
+  --gray-light-bg: #F9FAFB;
   --border-light: #E5E7EB;
+  
+  /* Opacidades e Suportes */
+  --orange-soft: rgba(255, 123, 0, 0.1);
+  --teal-soft: rgba(31, 78, 95, 0.1);
 }
 
-/* =====================
-   POP-UP TOPO
-===================== */
-.top-banner {
-  width: 100%;
-  background: #FF5900;
-  color: #ffffff;
-  overflow: hidden;
-
-  padding: 10px 0;
-
-  font-size: 14px;
-  font-weight: 600;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-
-  position: relative;
-  z-index: 999;
-
-  display: flex;
-  align-items: center;
-}
-
-.top-banner-track {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-
-  width: max-content;
-
-  white-space: nowrap;
-
-  animation: marquee 18s linear infinite;
-  will-change: transform;
-}
-
-.top-banner-track span {
-  color: #ffffff;
-  flex-shrink: 0;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .top-banner {
-    padding: 8px 0;
-    font-size: 12px;
-  }
-
-  .top-banner-track {
-    gap: 14px;
-
-    animation-duration: 20s;
-  }
-}
-
-
-/* =====================
-   BODY POR PÁGINA
-===================== */
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--black);
   line-height: 1.6;
+  background-color: var(--white);
 }
 
-/* HOME */
-.page-home {
-  background: linear-gradient(
-    120deg,
-    #ffffff 0%,
-    #f9fafb 60%,
-    #f3f4f6 100%
-  );
-}
-
-/* PÁGINAS INTERNAS */
-.page-default {
-  background: var(--gray-bg);
-}
-
-/* BLOG */
-.page-blog {
-  background: #f8fafc;
-}
-
-
-/* =====================
-   CONTAINER
-===================== */
-
+/* ==========================================================================
+   2. ESTRUTURA BASE (CONTAINER)
+   ========================================================================== */
 .container {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   width: 100%;
 }
 
-
-/* =====================
-   HEADER / MENU
-===================== */
-
+/* ==========================================================================
+   3. HEADER / MENU (Corrigido para usar a variável correta)
+   ========================================================================== */
 header {
-  background: #ff7b00;
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 90, 31, 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
-  z-index: 10;
-
-  padding: 1rem 0;
+  z-index: 100;
+  padding: 1.2rem 0;
 }
 
 header .container {
@@ -153,243 +71,154 @@ header .container {
 /* NAV */
 header nav {
   display: flex;
-  gap: 1.8rem;
+  gap: 2rem;
   align-items: center;
+  margin-left: auto;
 }
 
-/* LINKS */
+/* LINKS DO MENU */
 header a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--black);
   font-weight: 500;
   font-size: 0.95rem;
   position: relative;
-
   padding: 0.4rem 0;
-  opacity: 0.9;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-/* Hover */
 header a:hover {
-  opacity: 1;
+  color: var(--orange-main); /* Alterado de --primary para --orange-main */
 }
 
-/* Underline */
+/* Underline animado */
 header a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -2px;
   width: 0%;
   height: 2px;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--orange-main); /* Alterado de --primary para --orange-main */
   transition: width 0.3s ease;
 }
 
-/* Hover + ativo */
 header a:hover::after,
 header a.active::after {
   width: 100%;
 }
 
-/* Aba ativa */
 header a.active {
   font-weight: 600;
-  opacity: 1;
+  color: var(--orange-main); /* Alterado de --primary para --orange-main */
 }
 
 
-/* =====================
-   HERO (HOME)
-===================== */
-.hero {
-  padding: 5rem 1.5rem 6rem;
-  position: relative;
-  overflow: hidden; /* 🔑 evita scroll horizontal no mobile */
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -120px;
-  right: -120px;
-  width: 420px;
-  height: 420px;
-  background: radial-gradient(
-    circle,
-    var(--primary-soft) 0%,
-    transparent 70%
-  );
-  z-index: -1;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  font-weight: 600;
-  line-height: 1.15;
-  max-width: 540px;
-}
-
-.hero p {
-  margin-top: 1.3rem;
-  font-size: 1.05rem;
-  color: var(--gray-text);
-  max-width: 500px;
-}
-
-/* =====================
-   AJUSTES MOBILE
-===================== */
+/* ==========================================================================
+   5. RESPONSIVIDADE DO CORPO GERAL
+   ========================================================================== */
 @media (max-width: 768px) {
-  .hero::before {
-    width: 260px;
-    height: 260px;
-    top: -80px;
-    right: -80px;
+  header {
+    padding: 1rem 0;
+  }
+  
+  header nav {
+    gap: 1.2rem;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
+  header a {
+    font-size: 0.9rem;
   }
-}
 
-.hero p {
-  margin-top: 1.3rem;
-  font-size: 1.05rem;
-  color: var(--gray-text);
-  max-width: 500px;
-}
+  .footer {
+    padding: 4rem 0 2rem 0;
+  }
 
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+  }
 
-/* =====================
-   PÁGINAS INTERNAS
-===================== */
-.page-content {
-  padding: 4rem 1.5rem 6rem;
-}
-
-.page-content h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-.page-content p {
-  margin-top: 1rem;
-  max-width: 700px;
-  color: var(--gray-text);
-}
-
-/* =====================
-   RESPONSIVO
-===================== */
-@media (min-width: 768px) {
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4.5rem;
-    align-items: center;
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
   }
 }
 
-/* =====================
-   ANIMAÇÃO
-===================== */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* =====================
-   DESTAQUES DE TEXTO
-===================== */
-.highlight {
-  color: var(--primary);
-  font-weight: 600;
-}
-
-
-
-/* =====================
-   SEÇÕES GERAIS
-===================== */
-.section {
-  padding: 5rem 1.5rem;
-}
-
-.section h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.section-subtitle {
-  max-width: 600px;
-  margin-bottom: 3rem;
-  color: var(--gray-text);
-}
-
-/* VARIAÇÕES DE FUNDO */
-.section-primary {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 90, 31, 0.12),
-    rgba(255, 90, 31, 0.05)
-  );
-}
-
-.section-primary-soft {
-  background: rgba(255, 90, 31, 0.08);
-}
-
-.section-light {
-  background: var(--white);
-}
-
-
-
-/* =====================
-   FOOTER
-===================== */
-
+/* ==========================================================================
+   16. FOOTER (Forçando a fonte Poppins)
+   ========================================================================== */
 .footer {
-  background: #ffffff;
-  color: #333333;
-  padding: 4rem 1.5rem;
-  border-top: 1px solid rgba(255, 123, 0, 0.25);
+  background: #1F4E5F; 
+  color: #9ca3af;
+  padding: 5rem 1.5rem 2.5rem;
+  font-size: 0.95rem;
+  /* Força a fonte aqui */
+  font-family: 'Poppins', sans-serif !important;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
+/* Garante que tudo dentro do footer também use a mesma fonte */
+.footer *, .footer h3, .footer a {
+  font-family: 'Poppins', sans-serif !important;
 }
 
-/* Ações / links */
-.footer-actions {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #1f2937;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Links */
+.footer-brand { display: flex; flex-direction: column; gap: 1rem; }
+.footer-logo { color: var(--white); font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em; }
+.footer-tagline { line-height: 1.6; max-width: 340px; color: #9ca3af; }
+.footer-nav, .footer-social { display: flex; flex-direction: column; gap: 0.8rem; }
+
+.footer h3 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
 .footer a {
-  color: #ff7b00;
+  color: #9ca3af;
   text-decoration: none;
-  font-weight: 500;
-  position: relative;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease;
+  width: max-content;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Hover */
-.footer a:hover {
-  opacity: 0.75;
+.footer a:hover { color: #FF7B00; } /* Cor Laranja do seu site */
+.footer .whats-highlight { color: #FF7B00; font-weight: 600; }
+.footer .whats-highlight:hover { color: #ff9d42; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 0.85rem;
+  color: #6b7280;
 }
 
+.footer-bottom p { margin: 0; }
+.footer-legal { display: flex; gap: 1.5rem; }
+.footer-legal a { color: #6b7280; font-size: 0.85rem; }
+.footer-legal a:hover { color: #9ca3af; }
+
+/* ==========================================================================
+   17. RESPONSIVIDADE FOOTER
+   ========================================================================== */
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .footer-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
+  .footer-legal { justify-content: center; }
+}
