@@ -16,6 +16,7 @@ const { post } = Astro.props;
 const { Content, headings } = await render(post);
 
 const readingTime = Math.ceil(post.body.split(' ').length / 200);
+const listenTime = Math.ceil(post.body.split(' ').length / 90);
 
 // 1. Usa o seoTitle (se você criar um específico), senão usa o título padrão
 const baseTitle = post.data.seoTitle || post.data.title;
@@ -183,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="author-info">
             <strong>{post.data.author}</strong>
             <span>{post.data.authorRole}</span>
-            <span>{readingTime} min de leitura</span>
+            <span>{readingTime} min de leitura • {listenTime} min de escuta</span>
           </div>
         </div>
 
@@ -301,6 +302,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const iconPlay = document.querySelector('.icon-play');
   const iconPause = document.querySelector('.icon-pause');
 
+  // Função auxiliar para formatar os segundos em MM:SS (Declarada no topo do escopo)
+  function formatTime(seconds) {
+    if (isNaN(seconds)) return "0:00";
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+  }
+
   if (audio && btn) {
     let hasStarted = false;
     let milestones = { 25: false, 50: false, 75: false, 90: false };
@@ -311,7 +320,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         audio.play();
         iconPlay.classList.add('hidden');
         iconPause.classList.remove('hidden');
-        textLabel.textContent = 'Pausar áudio';
+        // Já exibe o tempo logo no primeiro clique para não dar delay
+        textLabel.textContent = `Pausar • ${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
 
         // TRACKING: audio_start
         if (!hasStarted) {
@@ -327,7 +337,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         audio.pause();
         iconPlay.classList.remove('hidden');
         iconPause.classList.add('hidden');
-        textLabel.textContent = 'Continuar ouvindo';
+        // Ajustado para manter o tempo congelado quando o usuário pausa
+        textLabel.textContent = `Continuar • ${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
       }
     });
 
@@ -336,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       iconPause.classList.add('hidden');
       textLabel.textContent = 'Ouvir novamente';
       
-      // TRACKING: 
+      // TRACKING: 100%
       window.dataLayer.push({
         event: 'audio_progress',
         audio_title: articleTitle,
@@ -344,11 +355,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     });
 
-    // TRACKING: Progresso com trava de segurança para NaN / Infinity
+    // TRACKING & ATUALIZAÇÃO DE TEMPO DINÂMICO
     audio.addEventListener('timeupdate', () => {
       if (audio.duration && !isNaN(audio.duration) && audio.duration > 0) {
+        // 1. Atualiza o texto do botão em tempo real APENAS se o áudio estiver tocando
+        if (!audio.paused) {
+          textLabel.textContent = `Pausar • ${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+        }
+
+        // 2. Disparos do DataLayer
         const percentage = Math.floor((audio.currentTime / audio.duration) * 100);
-        
         [25, 50, 75, 90].forEach(marker => {
           if (percentage >= marker && !milestones[marker]) {
             milestones[marker] = true;
@@ -361,7 +377,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
       }
     });
-  }
+
+  } 
 </script>
 
 </body>
