@@ -6,7 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Como responder 'me fale sobre uma falha sua' na entrevista (sem queimar o filme)"
-tags: ["entrevista de emprego", "processo seletivo", "me fale sobre uma falha", "dicas de entrevista", "primeiro emprego"]
+tags: ["entrevista de emprego", "processo seletivo", "dicas de entrevista"]
 cta_text: "Quero me preparar melhor"
 cta_url: "https://firststeplab.com.br/#leadForm"
 ---
