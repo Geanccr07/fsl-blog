@@ -8,7 +8,7 @@ authorImage: "/gean.jpg"
 seoTitle: "Processo seletivo sem retorno: o que fazer"
 tags: ["processo seletivo", "currículo", "ATS", "primeiro emprego", "recolocação profissional"]
 cta_text: "Quero ajuda com meu currículo"
-cta_url: "https://firststeplab.com.br/#leadForm"
+cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=processo_seletivo_sem_retorno#leadForm"
 ---
 
 ## Currículo enviado, silêncio total

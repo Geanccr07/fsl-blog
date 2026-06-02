@@ -8,7 +8,7 @@ authorImage: "/gean.jpg"
 seoTitle: "Como responder 'me fale sobre uma falha sua' na entrevista (sem queimar o filme)"
 tags: ["entrevista de emprego", "processo seletivo", "dicas de entrevista"]
 cta_text: "Quero me preparar melhor"
-cta_url: "https://firststeplab.com.br/#leadForm"
+cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=falha_na_entrevista#leadForm"
 ---
 
 ## Onde a maioria dos candidatos erram

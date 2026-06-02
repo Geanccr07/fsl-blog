@@ -8,7 +8,7 @@ authorImage: "/gean.jpg"
 seoTitle: "Fiz a entrevista e não recebi retorno: o que fazer"
 tags: ["entrevista sem retorno", "processo seletivo", "entrevista de emprego", "ansiedade processo seletivo"]
 cta_text: "Quero ajuda"
-cta_url: "https://firststeplab.com.br/#leadForm"
+cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=entrevista_sem_retorno#leadForm"
 audio_url: "/audios/entrevista-sem-retorno.m4a"
 ---
 
