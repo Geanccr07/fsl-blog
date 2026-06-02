@@ -1,43 +1,34 @@
-# Astro Starter Kit: Minimal
+# First Step Lab Blog
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Blog desenvolvido para geração de demanda orgânica através de SEO e conteúdo.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Objetivo
 
-## 🚀 Project Structure
+Atrair tráfego qualificado e apoiar a aquisição de membros da First Step Lab.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Stack
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Astro
+- Vercel
+- GA4
+- GTM
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Eventos implementados
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- page_view
+- scroll_depth
+- cta_click
+- author_cta_click
+- audio_start
+- audio_progress
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Analytics
 
-## 🧞 Commands
+Dashboard construído no Looker Studio para acompanhamento de:
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Sessões
+- Conversões
+- Principais artigos
+- Origem do tráfego
+- Engajamento
+- Outras métricas estratégicas
