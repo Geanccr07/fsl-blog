@@ -16,7 +16,7 @@ const { post } = Astro.props;
 const { Content, headings } = await render(post);
 
 const readingTime = Math.ceil(post.body.split(' ').length / 200);
-const listenTime = Math.ceil(post.body.split(' ').length / 90);
+const listenTime = Math.ceil(post.body.split(' ').length / 120);
 
 // 1. Usa o seoTitle (se você criar um específico), senão usa o título padrão
 const baseTitle = post.data.seoTitle || post.data.title;
