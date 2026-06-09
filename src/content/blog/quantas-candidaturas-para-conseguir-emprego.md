@@ -9,6 +9,7 @@ authorImage: "/gean.jpg"
 seoTitle: "Quantas candidaturas por dia para conseguir emprego?"
 cta_text: "Baixar a planilha de graça"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=quantas_candidaturas_para_conseguir_emprego#leadForm"
+audio_url: "/audios/quantas-candidaturas-para-conseguir-emprego.m4a"
 ---
 
 ## Você está atirando para todo lado
