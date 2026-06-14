@@ -360,7 +360,7 @@ html {
 }
 
 /* ==========================================================================
-   7. BIO DO AUTOR (Fim do artigo)
+   7. BIO DO AUTOR 
    ========================================================================== */
 .author-bio-wrapper {
   width: 100vw;
@@ -585,5 +585,173 @@ html {
 
   .author-links a {
     width: 100%;
+  }
+}
+
+/* ==========================================================================
+   ARTIGOS RELACIONADOS 
+   ========================================================================== */
+
+.related-posts-section {
+  padding: 5rem 0;
+  background-color: rgba(63, 108, 124, 0.04); 
+  border-top: 1px solid rgba(63, 108, 124, 0.1);
+}
+
+.related-posts-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem; 
+  line-height: 38px;
+  color: #111827;
+  margin-bottom: 2.5rem;
+}
+
+.related-posts-grid {
+  display: grid;
+  gap: 2.5rem; 
+  
+
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1100px; 
+  margin: 0 auto;
+}
+
+.related-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(63, 108, 124, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 123, 0, 0.4); /* Efeito hover laranja sutil */
+  box-shadow: 0 10px 20px -5px rgba(63, 108, 124, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.related-card-image-link {
+  display: block;
+  width: 100%;
+  aspect-ratio: 21 / 9; 
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.related-card-image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.related-card:hover .related-card-image-link img {
+  transform: scale(1.02);
+}
+
+.related-card-content {
+  padding: 2rem; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.related-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.tag-badge {
+  background-color: rgba(63, 108, 124, 0.08);
+  color: #3F6C7C;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.related-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem; 
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.related-card h3 a {
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.related-card h3 a:hover {
+  color: #FF7B00; 
+}
+
+.related-card p {
+  color: #4b5563;
+  font-size: 1rem; 
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Botão Laranja FSL */
+.related-read-more {
+  margin-top: auto; 
+  color: #FF7B00;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.related-read-more:hover {
+  color: #3F6C7C;
+  transform: translateX(4px); 
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE E UX MOBILE
+   ========================================================================== */
+@media (max-width: 800px) {
+  .related-posts-grid {
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .related-card h3 {
+    font-size: 1.35rem; 
+  }
+  
+  .related-posts-section h2 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    padding: 0 1rem;
+  }
+  
+  .related-card-content {
+    padding: 1.5rem; /* Respiro menor no mobile */
   }
 }

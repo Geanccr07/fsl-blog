@@ -88,7 +88,7 @@ header a {
 }
 
 header a:hover {
-  color: var(--orange-main); /* Alterado de --primary para --orange-main */
+  color: var(--orange-main); 
 }
 
 /* Underline animado */
@@ -99,7 +99,7 @@ header a::after {
   bottom: -2px;
   width: 0%;
   height: 2px;
-  background: var(--orange-main); /* Alterado de --primary para --orange-main */
+  background: var(--orange-main); 
   transition: width 0.3s ease;
 }
 
@@ -110,7 +110,7 @@ header a.active::after {
 
 header a.active {
   font-weight: 600;
-  color: var(--orange-main); /* Alterado de --primary para --orange-main */
+  color: var(--orange-main); 
 }
 
 
@@ -149,7 +149,7 @@ header a.active {
 
 
 /* ==========================================================================
-   16. FOOTER (Forçando a fonte Poppins)
+   16. FOOTER 
    ========================================================================== */
 .footer {
   background: #1F4E5F; 

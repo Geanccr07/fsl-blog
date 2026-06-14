@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import '../styles/global.css';
 import '../styles/blog.css';
 
+// 1. getStaticPaths avisa o Astro quais páginas gerar no Build
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
@@ -12,19 +13,36 @@ export async function getStaticPaths() {
   }));
 }
 
+// Captura os dados do post atual
 const { post } = Astro.props;
 const { Content, headings } = await render(post);
 
+// BUSCA A COLEÇÃO
+const allBlogPosts = await getCollection('blog');
+
+// Cálculos de tempo 
 const readingTime = Math.ceil(post.body.split(' ').length / 200);
 const listenTime = Math.ceil(post.body.split(' ').length / 120);
 
-// 1. Usa o seoTitle (se você criar um específico), senão usa o título padrão
+// filtro dos artigos relacionados 
+const currentTags = post.data.tags || [];
+const relatedPosts = allBlogPosts
+  .filter((p) => p.id !== post.id) // Remove o artigo que está sendo lido
+  .map((p) => {
+    const matches = (p.data.tags || []).filter((tag) => currentTags.includes(tag)).length;
+    return { post: p, matches };
+  })
+  .sort((a, b) => b.matches - a.matches || new Date(b.post.data.date).getTime() - new Date(a.post.data.date).getTime())
+  .map((item) => item.post)
+  .slice(0, 2);
+
+// Usa o seoTitle
 const baseTitle = post.data.seoTitle || post.data.title;
 
-// 2. Monta o título com a marca
+// Monta o título com a marca
 let pageTitle = `${baseTitle}`;
 
-// 3. Se passar de 60 caracteres, remove o nome da marca para não estourar no Google
+// Se passar de 60 caracteres, remove o nome da marca para não estourar no Google
 if (pageTitle.length > 60) {
   pageTitle = baseTitle; 
 }
@@ -264,6 +282,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+
+{relatedPosts.length > 0 && (
+    <section class="related-posts-section">
+      <div class="container">
+        <h2>Mais conteúdos semelhantes para você</h2>
+        
+        <div class="related-posts-grid">
+          {relatedPosts.map((related) => (
+            <article class="related-card">
+              {related.data.image && (
+                <a href={`/${related.id}/?ref=blog-related`} class="related-card-image-link">
+                  <img src={related.data.image} alt={related.data.title} loading="lazy" />
+                </a>
+              )}
+              
+              <div class="related-card-content">
+                <div class="related-card-tags">
+                  {(related.data.tags || []).slice(0, 2).map(tag => (
+                    <span class="tag-badge">{tag}</span>
+                  ))}
+                </div>
+                
+                <h3>
+                  <a href={`/${related.id}/?ref=blog-related`}>
+                    {related.data.title}
+                  </a>
+                </h3>
+                
+                <p>{related.data.description}</p>
+                
+                <a href={`/${related.id}/?ref=blog-related`} class="related-read-more">
+                  Continuar lendo →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
 </main> <footer class="footer">
   <div class="container footer-grid">
     <div class="footer-brand">
@@ -302,7 +361,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const iconPlay = document.querySelector('.icon-play');
   const iconPause = document.querySelector('.icon-pause');
 
-  // Função auxiliar para formatar os segundos em MM:SS (Declarada no topo do escopo)
+  // Função auxiliar para formatar os segundos em MM:SS
   function formatTime(seconds) {
     if (isNaN(seconds)) return "0:00";
     const mins = Math.floor(seconds / 60);
