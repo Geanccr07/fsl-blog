@@ -7,6 +7,7 @@ authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Como montar seu perfil do LinkedIn"
 tags: ["linkedin", "carreira", "emprego", "recrutamento", "perfil profissional"]
+image: "/capas/linkedin-perfil-que-atrai-recrutadores.webp"
 ---
 
 ## Introdução

@@ -10,6 +10,7 @@ tags: ["entrevista sem retorno", "processo seletivo", "entrevista de emprego", "
 cta_text: "Quero ajuda"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=entrevista_sem_retorno#leadForm"
 audio_url: "/audios/entrevista-sem-retorno.m4a"
+image: "/capas/entrevista-sem-retorno.webp"
 ---
 
 ## Você checou o e-mail de novo. E de novo.

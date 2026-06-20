@@ -1,5 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+// 🚀 ADICIONADO: Importando as fontes locais Poppins
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+
 import '../styles/global.css';
 import '../styles/blog.css';
 
@@ -23,9 +29,6 @@ const posts = (await getCollection('blog'))
 
     <meta charset="UTF-8" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -100,11 +103,23 @@ const posts = (await getCollection('blog'))
       <section>
         <div class="container">
 
-          <div class="blog-grid">
+<div class="blog-grid">
 
             {
-              posts.map((post) => (
+              posts.map((post, index) => (
                 <article class="blog-card">
+
+                  <a href={`/${post.id}/`} class="blog-card-image-link">
+                    <img 
+                      src={post.data.image} 
+                      alt={`Capa do artigo: ${post.data.title}`}
+
+                      loading={index < 3 ? "eager" : "lazy"}
+
+                      width="600"
+                      height="257"
+                    />
+                  </a>
 
                   <a href={`/${post.id}/`}>
 
