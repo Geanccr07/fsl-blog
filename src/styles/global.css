@@ -12,29 +12,47 @@ html, body {
 }
 
 :root {
-  /* Cores Principais da Marca */
+  /* Cores Fixas Institucionais (Não mudam com o tema) */
   --orange-main: #FF7B00;
   --orange-deep: #FF5900;
   --teal-deep: #1F4E5F;
-  
-  /* Neutros Premium */
-  --black: #0B0B0B;
-  --white: #FFFFFF;
-  --gray-text: #4B5563;
-  --gray-bg: #F3F4F6;
-  --gray-light-bg: #F9FAFB;
-  --border-light: #E5E7EB;
-  
-  /* Opacidades e Suportes */
   --orange-soft: rgba(255, 123, 0, 0.1);
   --teal-soft: rgba(31, 78, 95, 0.1);
+  --white: #FFFFFF;
+
+  /* Variáveis Dinâmicas - Modo Claro */
+  --bg-global: #FFFFFF;
+  --bg-header: rgba(255, 255, 255, 0.85);
+  --bg-footer: #1F4E5F;
+  
+  --texto-principal: #0B0B0B;
+  --texto-footer: #9ca3af;
+  --texto-legal: #6b7280;
+  
+  --borda-header: rgba(0, 0, 0, 0.05);
+  --borda-footer: #1f2937;
+}
+
+:root.dark {
+  /* Variáveis Dinâmicas - Modo Escuro */
+  --bg-global: #0b0f19;
+  --bg-header: rgba(11, 15, 25, 0.85);
+  --bg-footer: #121722;
+  
+  --texto-principal: #f9fafb;
+  --texto-footer: #9ca3af;
+  --texto-legal: #6b7280;
+  
+  --borda-header: rgba(255, 255, 255, 0.08);
+  --borda-footer: rgba(255, 255, 255, 0.05);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--black);
+  color: var(--texto-principal);
   line-height: 1.6;
-  background-color: var(--white);
+  background-color: var(--bg-global);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ==========================================================================
@@ -49,17 +67,20 @@ body {
 }
 
 /* ==========================================================================
-   3. HEADER / MENU (Corrigido para usar a variável correta)
+   3. HEADER / MENU
    ========================================================================== */
 header {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--bg-header);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  position: sticky;
+  border-bottom: 1px solid var(--borda-header);
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
-  padding: 1.2rem 0;
+  padding: 0.75rem 0; /* 💡 Reduzido drasticamente de 1.2rem para 0.75rem */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 header .container {
@@ -68,7 +89,6 @@ header .container {
   justify-content: space-between;
 }
 
-/* NAV */
 header nav {
   display: flex;
   gap: 2rem;
@@ -76,10 +96,9 @@ header nav {
   margin-left: auto;
 }
 
-/* LINKS DO MENU */
 header a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--texto-principal);
   font-weight: 500;
   font-size: 0.95rem;
   position: relative;
@@ -91,7 +110,6 @@ header a:hover {
   color: var(--orange-main); 
 }
 
-/* Underline animado */
 header a::after {
   content: "";
   position: absolute;
@@ -113,9 +131,74 @@ header a.active {
   color: var(--orange-main); 
 }
 
+/* ==========================================================================
+   4. FOOTER
+   ========================================================================== */
+.footer {
+  background: var(--bg-footer); 
+  color: var(--texto-footer);
+  padding: 5rem 1.5rem 2.5rem;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif !important;
+  transition: background-color 0.3s ease;
+}
+
+.footer *, .footer h3, .footer a {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid var(--borda-footer);
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.footer-brand { display: flex; flex-direction: column; gap: 1rem; }
+.footer-logo { color: var(--white); font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em; }
+.footer-tagline { line-height: 1.6; max-width: 340px; color: var(--texto-footer); }
+.footer-nav, .footer-social { display: flex; flex-direction: column; gap: 0.8rem; }
+
+.footer h3 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer a {
+  color: var(--texto-footer);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  width: max-content;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer a:hover { color: var(--orange-main); } 
+.footer .whats-highlight { color: var(--orange-main); font-weight: 600; }
+.footer .whats-highlight:hover { color: #ff9d42; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--texto-legal);
+}
+
+.footer-bottom p { margin: 0; }
+.footer-legal { display: flex; gap: 1.5rem; }
+.footer-legal a { color: var(--texto-legal); font-size: 0.85rem; }
+.footer-legal a:hover { color: var(--texto-footer); }
 
 /* ==========================================================================
-   5. RESPONSIVIDADE DO CORPO GERAL
+   5. RESPONSIVIDADE E ADAPTAÇÕES MOBILE
    ========================================================================== */
 @media (max-width: 768px) {
   header {
@@ -145,80 +228,8 @@ header a.active {
     gap: 1.25rem;
     text-align: center;
   }
-}
 
-
-/* ==========================================================================
-   16. FOOTER 
-   ========================================================================== */
-.footer {
-  background: #1F4E5F; 
-  color: #9ca3af;
-  padding: 5rem 1.5rem 2.5rem;
-  font-size: 0.95rem;
-  /* Força a fonte aqui */
-  font-family: 'Poppins', sans-serif !important;
-}
-
-/* Garante que tudo dentro do footer também use a mesma fonte */
-.footer *, .footer h3, .footer a {
-  font-family: 'Poppins', sans-serif !important;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 3.5rem;
-  padding-bottom: 3.5rem;
-  border-bottom: 1px solid #1f2937;
-  font-family: 'Poppins', sans-serif;
-}
-
-.footer-brand { display: flex; flex-direction: column; gap: 1rem; }
-.footer-logo { color: var(--white); font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em; }
-.footer-tagline { line-height: 1.6; max-width: 340px; color: #9ca3af; }
-.footer-nav, .footer-social { display: flex; flex-direction: column; gap: 0.8rem; }
-
-.footer h3 {
-  color: var(--white);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-.footer a {
-  color: #9ca3af;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  width: max-content;
-  font-family: 'Poppins', sans-serif;
-}
-
-.footer a:hover { color: #FF7B00; } /* Cor Laranja do seu site */
-.footer .whats-highlight { color: #FF7B00; font-weight: 600; }
-.footer .whats-highlight:hover { color: #ff9d42; }
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 2rem;
-  font-size: 0.85rem;
-  color: #6b7280;
-}
-
-.footer-bottom p { margin: 0; }
-.footer-legal { display: flex; gap: 1.5rem; }
-.footer-legal a { color: #6b7280; font-size: 0.85rem; }
-.footer-legal a:hover { color: #9ca3af; }
-
-/* ==========================================================================
-   17. RESPONSIVIDADE FOOTER
-   ========================================================================== */
-@media (max-width: 768px) {
-  .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .footer-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
-  .footer-legal { justify-content: center; }
+  .footer-legal {
+    justify-content: center;
+  }
 }

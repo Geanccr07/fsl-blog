@@ -2,7 +2,7 @@
 title: "O que colocar no currículo sem experiência: o guia definitivo"
 description: "Nunca trabalhou ou tem pouca experiência? Veja exatamente o que colocar em cada seção do currículo com exemplos reais de como chamar atenção do recrutador."
 date: 2025-06-19
-tags: ["currículo sem experiência", "primeiro emprego", "como fazer currículo"]
+tags: ["primeiro emprego", "como fazer currículo"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"

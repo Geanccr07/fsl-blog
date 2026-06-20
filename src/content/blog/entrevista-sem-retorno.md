@@ -6,7 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Fiz a entrevista e não recebi retorno: o que fazer"
-tags: ["entrevista sem retorno", "processo seletivo", "entrevista de emprego", "ansiedade processo seletivo"]
+tags: ["entrevista sem retorno", "ansiedade processo seletivo"]
 cta_text: "Quero ajuda"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=entrevista_sem_retorno#leadForm"
 audio_url: "/audios/entrevista-sem-retorno.m4a"

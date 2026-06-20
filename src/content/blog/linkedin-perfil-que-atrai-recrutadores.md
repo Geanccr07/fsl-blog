@@ -6,7 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"
 seoTitle: "Como montar seu perfil do LinkedIn"
-tags: ["linkedin", "carreira", "emprego", "recrutamento", "perfil profissional"]
+tags: ["linkedin", "carreira"]
 image: "/capas/linkedin-perfil-que-atrai-recrutadores.webp"
 ---
 
