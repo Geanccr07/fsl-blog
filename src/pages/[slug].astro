@@ -42,16 +42,8 @@ const relatedPosts = allBlogPosts
   .map((item) => item.post)
   .slice(0, 2);
 
-// Usa o seoTitle
-const baseTitle = post.data.seoTitle || post.data.title;
-
-// Monta o título com a marca
-let pageTitle = `${baseTitle}`;
-
-// Se passar de 60 caracteres, remove o nome da marca para não estourar no Google
-if (pageTitle.length > 60) {
-  pageTitle = baseTitle; 
-}
+// Define o título da página usando o seoTitle (se existir) ou o título puro do artigo
+const pageTitle = post.data.seoTitle || post.data.title;
 
 ---
 
