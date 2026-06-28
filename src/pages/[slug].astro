@@ -42,8 +42,30 @@ const relatedPosts = allBlogPosts
   .map((item) => item.post)
   .slice(0, 2);
 
-// Define o título da página usando o seoTitle (se existir) ou o título puro do artigo
 const pageTitle = post.data.seoTitle || post.data.title;
+
+const authorKey = post.data.author || "Gean Carlos";
+
+const authorsData = {
+  "Gean Carlos": { 
+    name: "Gean Carlos",
+    role: "Growth Marketing Analyst • First Step Lab",
+    avatar: "/gean.jpg",
+    bio: "Gean Carlos é Analista de Growth e fundador da First Step Lab. Compartilha conteúdos sobre LinkedIn, currículo, entrevistas e estratégias de carreira para ajudar profissionais a conquistarem vagas.",
+    linkedin: "https://www.linkedin.com/in/gean-carlos-ribeiro/",
+    community: "https://firststeplab.com.br/#leadForm"
+  },
+  "Priscila Lima": {
+    name: "Priscila Lima",
+    role: "Especialista em Carreira • First Step Lab",
+    avatar: "/priscila.png", 
+    bio: "Priscila Lima é especialista em carreira e recolocação, fundadora da GPL Consultoria de RH e formada pelo programa Gupy Experts. Com mais de 5 anos de atuação, ajuda profissionais a se posicionarem estrategicamente para conquistar novas oportunidades, com mais de 90% dos clientes recolocados no mercado de trabalho.",
+    linkedin: "https://www.linkedin.com/in/admrh-gislaine-priscila-lima/",
+    community: "https://firststeplab.com.br/#leadForm"
+  }
+};
+
+const currentAuthor = authorsData[authorKey] || authorsData["Gean Carlos"];
 
 ---
 
@@ -257,27 +279,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </article>
   </div> 
 
-  <section class="author-bio-wrapper">
+<section class="author-bio-wrapper">
     <div class="author-bio">
       <div class="author-bio-left">
-        <img src="/gean.jpg" alt="Gean Carlos" class="author-bio-avatar" />
+        <img src={currentAuthor.avatar} alt={currentAuthor.name} class="author-bio-avatar" />
         <div class="author-bio-meta">
-          <h3>Gean Carlos</h3>
-          <span>Growth Marketing Analyst • First Step Lab</span>
+          <h3>{currentAuthor.name}</h3>
+          <span>{currentAuthor.role}</span>
         </div>
       </div>
 
       <div class="author-bio-right">
         <h2>Quem escreveu este artigo</h2>
-        <p>
-          Gean Carlos é Analista de Growth e fundador da First Step Lab.
-          Compartilha conteúdos sobre LinkedIn, currículo, entrevistas
-          e estratégias de carreira para ajudar profissionais a conquistarem vagas.
-        </p>
+        <p>{currentAuthor.bio}</p>
 
         <div class="author-links">
-          <a href="https://www.linkedin.com/in/gean-carlos-ribeiro/" target="_blank">LinkedIn</a>
-          <a href="https://firststeplab.com.br/#leadForm" target="_blank">Comunidade gratuita</a>
+          <a href={currentAuthor.linkedin} target="_blank">LinkedIn</a>
+          <a href={currentAuthor.community} target="_blank">Comunidade gratuita</a>
         </div>
       </div>
     </div>
