@@ -6,7 +6,6 @@ tags: ["primeiro emprego", "como fazer currículo"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.jpg"
-seoTitle: "O que colocar no currículo sem experiência: o guia definitivo"
 cta_text: "Acessar template gratuito"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=curriculo_sem_experiencia_guia#leadForm"
 audio_url: "/audios/curriculo-sem-experiencia-guia.m4a"
