@@ -379,6 +379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </button> 
 
 <script is:inline>
+
   // ==========================================
   // 1. CONTROLE E TRACKING DO AUDIO PLAYER
   // ==========================================
@@ -464,8 +465,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   } 
 
   // ==========================================
-  // 2. BARRA DE PROGRESSO DE LEITURA (FOCADA NO ARTIGO)
+  // 2. BARRA DE PROGRESSO DE LEITURA 
   // ==========================================
+
   window.addEventListener('scroll', () => {
     const bar = document.getElementById('reading-bar');
     const article = document.querySelector('.blog-post article');
@@ -496,6 +498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // ==========================================
   // 3. LOGICA GLOBAL DE TEMA (DARK / LIGHT)
   // ==========================================
+  
   const getTheme = () => {
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
       return localStorage.getItem('theme');
