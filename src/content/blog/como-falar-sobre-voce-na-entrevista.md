@@ -19,7 +19,7 @@ Vejo isso toda semana. O candidato chegou preparado, pesquisou a empresa, escolh
 
 A trava não é timidez, nem é falta de experiência. É que a pessoa não sabe a diferença entre descrever o que fez e comunicar o que entregou. São duas coisas completamente diferentes, e a entrevista cobra a segunda.
 
-A pergunta parece simples justamente porque é aberta demais. Sem um limite claro, a maioria das pessoas responde de tudo um pouco: fala do curso, do primeiro emprego, de uma coisa que gosta de fazer, de outra que aprendeu recentemente. Resultado: o recrutador recebe um bloco de informações sem fio condutor, e a candidata sai da entrevista sem saber se foi bem ou mal.
+A pergunta parece simples justamente porque é aberta demais. Sem um limite claro, a maioria das pessoas responde de tudo um pouco: fala do curso, do primeiro emprego, de uma coisa que gosta de fazer, de outra que aprendeu recentemente. Resultado: o recrutador recebe um bloco de informações sem fio condutor, e o candidato sai da entrevista sem saber se foi bem ou mal.
 
 O que o recrutador quer com essa pergunta é: entender quem você é profissionalmente, o que te trouxe até aqui, o que você faz bem e por que faz sentido você estar naquela cadeira. Quando a resposta não entrega isso, a entrevista começa em desvantagem.
 
