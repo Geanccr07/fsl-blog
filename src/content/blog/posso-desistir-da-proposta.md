@@ -31,8 +31,6 @@ Tem outra coisa que ajuda a tirar o peso disso: lembrar que "descumprir a palavr
 
 Se você está passando por isso agora: o que você está sentindo é normal. E a resposta para a maioria das suas dúvidas é menos grave do que parece.
 
----
-
 ## Você pode desistir. A lei não te prende.
 
 Vou ser direto porque é o que você precisa ouvir primeiro: sim, você pode desistir. Sem multa, sem processo trabalhista contra você, sem consequência legal que te impeça de ir embora.
@@ -45,8 +43,6 @@ O que existe é um dever de boa-fé pré-contratual, dos dois lados. Isso signif
 
 A questão não é se você pode desistir. Você pode. A questão é como você comunica isso.
 
----
-
 ## O que muda dependendo de até onde o processo foi
 
 Nem toda desistência tem o mesmo peso. Existem três situações distintas e cada uma tem uma abordagem diferente.
@@ -56,8 +52,6 @@ Nem toda desistência tem o mesmo peso. Existem três situações distintas e ca
 **Enviou documentos e fez exame admissional.** Aqui a expectativa de contratação já foi criada. O exame admissional faz parte de um pré-contrato, e o entendimento jurídico é que o trabalho começa com a promessa de contratação, não sendo necessária a assinatura de um documento para que essa promessa passe a valer. Isso não te impede de desistir, mas significa que o risco de reputação é maior. A empresa já investiu tempo e recursos no seu processo de admissão. Avise o quanto antes e seja claro. O risco legal para você continua mínimo. O risco de relação existe e é real.
 
 **Já assinou o contrato.** A partir do momento em que o contrato é assinado, o vínculo existe para a lei. Se você desistir antes de começar, precisa comunicar a empresa formalmente, por escrito ou e-mail. Como não trabalhou nenhum dia, não há salário a receber, mas a empresa é obrigada a dar baixa no registro para que sua carteira fique em ordem para o próximo emprego. Nesse estágio, a situação se trata como uma demissão nos primeiros dias e as regras mudam. Vale conversar com um advogado trabalhista se chegar a esse ponto.
-
----
 
 ## Por que você não vai queimar seu nome se fizer certo
 
@@ -75,8 +69,6 @@ Empresa que abre vaga por protocolo quando já tem alguém escolhido. Processo q
 
 Isso tudo acontece. E ninguém do lado do candidato pensa que vai ter o nome queimado por ter participado do processo. A lógica vale para os dois lados.
 
----
-
 ## Como comunicar que você desistiu: o que dizer e o que não dizer
 
 Ser honesto é o caminho mais curto e mais eficaz. Quando você fala a verdade, não tem pressão interna, não fica se contradizendo, e quem está ouvindo percebe a diferença entre uma justificativa verdadeira e uma inventada na hora.
@@ -93,8 +85,6 @@ O que não fazer: sumir sem dar nenhum retorno. Avisar em cima da hora, no dia a
 
 Você não tem obrigação legal de dar um motivo. Mas quando o motivo é razoável e você pode compartilhar, ele humaniza a situação e deixa a saída mais limpa.
 
----
-
 ## E se o motivo for uma contraproposta do emprego atual?
 
 Foi o que aconteceu comigo. E é um dos motivos mais comuns, e também um dos mais delicados de comunicar, porque carrega uma leitura possível que você quer evitar: a de que você usou a outra proposta só como moeda de troca para arrancar um aumento de onde já estava.
@@ -108,8 +98,6 @@ Na hora de comunicar a desistência, não é necessário explicar que ficou por 
 E sobre o medo de se arrepender da escolha: vai acontecer de alguma forma. Se você escolher a opção A, vai lembrar de alguma coisa boa que a B tinha. O contrário também é verdade. Não é um problema seu, é como nosso cérebro funciona. Não dá para usar o arrependimento futuro como critério de decisão porque ele aparece independente do caminho que você escolher.
 
 O que importa é não deixar a comunicação em aberto. Quanto mais rápido você avisar, melhor para os dois lados, mas lembre-se de analisar sempre com calma.
-
----
 
 ## O que isso ensina sobre processo seletivo
 
