@@ -589,7 +589,7 @@ html {
   }
 
   .article-hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.30;
     margin-bottom: 0.8rem;
   }
@@ -604,19 +604,19 @@ html {
   }
 
   .blog-post h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 2.5rem;
   }
 
   .blog-post h3 {
-    font-size: 1.25rem;
+    font-size: 1.20rem;
     margin-top: 2rem;
   }
 
   .blog-post p,
   .blog-post ul,
   .blog-post ol {
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     line-height: 1.7;
   }
 
