@@ -1,7 +1,7 @@
 ---
 
 title: "Aceitei uma proposta de emprego e quero desistir: o que acontece?"
-description: "Aceitou a proposta, mas mudou de ideia? Saiba o que a lei diz, o que pode acontecer na prática e como comunicar a empresa sem queimar sua reputação."
+description: "Posso desistir do emprego antes de começar? Saiba o que a lei diz, o que pode acontecer na prática e como comunicar a empresa sem queimar sua reputação."
 date: 2025-07-05
 tags: ["processo seletivo", "emprego"]
 author: "Gean Carlos"
