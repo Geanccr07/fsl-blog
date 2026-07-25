@@ -44,6 +44,10 @@ const relatedPosts = allBlogPosts
 
 const pageTitle = post.data.seoTitle || post.data.title;
 
+const ogImage = post.data.image
+  ? `https://blog.firststeplab.com.br${post.data.image}`
+  : "https://blog.firststeplab.com.br/og-default.jpg";
+
 const authorKey = post.data.author || "Gean Carlos";
 
 const authorsData = {
@@ -119,7 +123,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <meta
     property="og:image"
-    content="https://blog.firststeplab.com.br/og-default.jpg"
+    content={ogImage}
   />
 
   <meta
@@ -144,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <meta
     name="twitter:image"
-    content="https://blog.firststeplab.com.br/og-default.jpg"
+    content={ogImage}
   />
 
 <script
@@ -156,11 +160,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     headline: post.data.title,
     description: post.data.description,
 
-    image: "https://blog.firststeplab.com.br/og-default.jpg",
+    image: ogImage,
 
     author: {
-      "@type": "Organization",
-      name: "First Step Lab"
+      "@type": "Person",
+      name: post.data.author
     },
 
     publisher: {
@@ -169,6 +173,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     },
 
     datePublished: post.data.date,
+    dateModified: post.data.date,
 
     mainEntityOfPage: {
       "@type": "WebPage",
