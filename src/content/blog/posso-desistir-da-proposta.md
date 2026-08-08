@@ -6,7 +6,7 @@ date: 2025-07-05
 tags: ["processo seletivo", "emprego"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Aceitei uma proposta de emprego e quero desistir"
 cta_text: "Quero participar da comunidade gratuita"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=posso_desistir_da_proposta#leadForm"

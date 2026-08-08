@@ -4,7 +4,7 @@ description: "Como encontrar vagas escondidas no LinkedIn? Elas existem fora da 
 date: 2025-05-27
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Vagas escondidas: O que são e como encontrar"
 tags: ["vagas escondidas", "busca de emprego", "LinkedIn"]
 cta_text: "Quero ter acesso gratuito"

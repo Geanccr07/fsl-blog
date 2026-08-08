@@ -5,7 +5,7 @@ date: 2025-06-27
 tags: ["processo seletivo", "dicas de entrevista"]
 author: "Priscila Lima"
 authorRole: "Especialista em carreira | First Step Lab"
-authorImage: "/priscila.png"
+authorImage: "/priscila.webp"
 seoTitle: "Como falar sobre você na entrevista"
 cta_text: "Agendar simulação de entrevista gratuita"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=como_falar_sobre_voce_na_entrevista#leadForm"

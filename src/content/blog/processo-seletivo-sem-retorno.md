@@ -4,7 +4,7 @@ description: "Mandou currículo para dezenas de vagas e nenhum retorno? Entenda 
 date: 2025-05-17
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Processo seletivo sem retorno: o que fazer"
 tags: ["processo seletivo", "currículo", "ATS"]
 cta_text: "Quero ajuda com meu currículo"

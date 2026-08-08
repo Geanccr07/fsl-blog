@@ -4,7 +4,7 @@ description: "Descubra como estruturar seu perfil no LinkedIn com palavras-chave
 date: 2025-05-17
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Como montar seu perfil do LinkedIn"
 tags: ["linkedin", "carreira"]
 image: "/capas/linkedin-perfil-que-atrai-recrutadores.webp"

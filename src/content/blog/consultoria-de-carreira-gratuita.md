@@ -4,7 +4,7 @@ description: "Entenda o que é consultoria de carreira, para quem faz sentido, c
 date: 2025-05-18
 author: "Gean"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Consultoria de carreira gratuita"
 tags: ["carreira", "consultoria gratuita"]
 cta_text: "Quero minha consultoria gratuita"

@@ -5,7 +5,7 @@ date: 2026-07-18
 tags: ["candidatura", "processo seletivo"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Candidatura assertiva: o que realmente funciona"
 cta_text: "Quero participar da comunidade gratuita"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=candidatura_assertiva#leadForm"

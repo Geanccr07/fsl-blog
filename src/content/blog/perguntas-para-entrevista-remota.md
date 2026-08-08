@@ -5,7 +5,7 @@ date: 2026-07-25
 tags: ["dicas de entrevista", "trabalho remoto"]
 author: "Priscila Lima"
 authorRole: "Especialista em carreira | First Step Lab"
-authorImage: "/priscila.png"
+authorImage: "/priscila.webp"
 seoTitle: "O que perguntar ao recrutador em entrevista de emprego remoto"
 cta_text: "Quero minha simulação de entrevista gratuita"
 cta_url: "https://firststeplab.com.br?utm_source=blog&utm_medium=content&utm_campaign=perguntas_recrutador_remoto"

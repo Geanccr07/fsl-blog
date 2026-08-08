@@ -5,7 +5,7 @@ date: 2025-06-08
 tags: ["processo seletivo", "currículo", "ATS"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Quantas candidaturas por dia para conseguir emprego?"
 cta_text: "Baixar a planilha de graça"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=quantas_candidaturas_para_conseguir_emprego#leadForm"

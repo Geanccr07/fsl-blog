@@ -4,7 +4,7 @@ description: "A pergunta que mais trava candidatos em entrevistas de emprego, ex
 date: 2025-06-02
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 seoTitle: "Como responder 'me fale sobre uma falha sua' na entrevista"
 tags: ["entrevista de emprego", "processo seletivo", "dicas de entrevista"]
 cta_text: "Quero me preparar melhor"

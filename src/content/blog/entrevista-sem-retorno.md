@@ -4,7 +4,7 @@ description: "Passou pela entrevista, cumpriu cada etapa, e agora o silêncio. E
 date: 2025-05-30
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
-authorImage: "/gean.jpg"
+authorImage: "/gean.webp"
 tags: ["entrevista sem retorno", "ansiedade processo seletivo"]
 cta_text: "Quero ajuda"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=entrevista_sem_retorno#leadForm"
