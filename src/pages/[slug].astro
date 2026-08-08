@@ -316,27 +316,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           {relatedPosts.map((related) => (
             <article class="related-card">
               {related.data.image && (
-                <a href={`/${related.id}/?ref=blog-related`} class="related-card-image-link">
+                <a href={`/${related.id}/`} class="related-card-image-link">
                   <img src={related.data.image} alt={related.data.title} loading="lazy" />
                 </a>
               )}
-              
+
               <div class="related-card-content">
                 <div class="related-card-tags">
                   {(related.data.tags || []).slice(0, 2).map(tag => (
                     <span class="tag-badge">{tag}</span>
                   ))}
                 </div>
-                
+
                 <h3>
-                  <a href={`/${related.id}/?ref=blog-related`}>
+                  <a href={`/${related.id}/`}>
                     {related.data.title}
                   </a>
                 </h3>
-                
+
                 <p>{related.data.description}</p>
-                
-                <a href={`/${related.id}/?ref=blog-related`} class="related-read-more">
+
+                <a href={`/${related.id}/`} class="related-read-more">
                   Continuar lendo →
                 </a>
               </div>
