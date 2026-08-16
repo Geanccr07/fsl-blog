@@ -371,6 +371,23 @@ html {
   font-weight: 600;
 }
 
+/* Links dentro do corpo do artigo (linkagem interna), escopados só no
+   wrapper .article-body pra não afetar índice, botão de áudio, CTA ou
+   cards de relacionados, que já têm cor própria. */
+.article-body a {
+  color: #ff7b00;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 123, 0, 0.4);
+  text-underline-offset: 2px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.article-body a:hover {
+  color: #e06c00;
+  text-decoration-color: currentColor;
+}
+
 .article-cover {
   width: 100%;
   border-radius: 16px;
