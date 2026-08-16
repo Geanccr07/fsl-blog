@@ -12,7 +12,9 @@
   --bg-bio: #fffafd;
   --bg-audio: #111827;
   --bg-related-section: rgba(63, 108, 124, 0.04);
-  
+  --bg-authors-section: rgba(255, 123, 0, 0.045);
+  --borda-authors-section: rgba(255, 123, 0, 0.15);
+
   --texto-titulo: #111827;
   --texto-subtitulo: #1f2937;
   --texto-corpo: #4b5563;
@@ -43,7 +45,9 @@
   --bg-bio: #121722;
   --bg-audio: #f9fafb;
   --bg-related-section: #0e1321;
-  
+  --bg-authors-section: rgba(255, 123, 0, 0.06);
+  --borda-authors-section: rgba(255, 123, 0, 0.18);
+
   --texto-titulo: #f9fafb;
   --texto-subtitulo: #e5e7eb;
   --texto-corpo: #9ca3af;
@@ -881,7 +885,6 @@ html {
   }
 }
 
-/* Ajustes tipográficos do Índice para Mobile */
 @media (max-width: 768px) {
   .table-of-contents a {
     font-size: 0.95rem; 
@@ -1003,6 +1006,260 @@ html {
     border: 1px solid var(--borda-header);
     width: 44px;          
     height: 44px;
+  }
+}
+
+/* ==========================================================================
+   PAGINAÇÃO DA RAÍZ (/ e /pagina/N/)
+   ========================================================================== */
+.blog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0 4rem;
+  flex-wrap: wrap;
+}
+
+.pagination-current {
+  font-size: 0.9rem;
+  color: var(--texto-meta);
+}
+
+.pagination-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--borda-card);
+  color: var(--texto-titulo);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: var(--bg-card);
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination-link:hover {
+  border-color: #ff7b00;
+  color: #ff7b00;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .blog-pagination {
+    gap: 0.75rem;
+    padding-bottom: 3rem;
+  }
+
+  .pagination-current {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pagination-link {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO "MENTORES QUE ESCREVEM AQUI" (RAÍZ DO BLOG)
+   Faixa full-bleed com fundo e borda próprios, pra ficar nítido que é
+   outra seção, diferente do bloco de autor de dentro do artigo.
+   ========================================================================== */
+.blog-authors-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 4.5rem 0 5rem;
+  background: var(--bg-authors-section);
+  border-top: 1px solid var(--borda-authors-section);
+  border-bottom: 1px solid var(--borda-authors-section);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-authors-kicker {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ff7b00;
+  margin-bottom: 0.9rem;
+}
+
+.blog-authors-section h2 {
+  font-size: 2rem;
+  color: var(--texto-titulo);
+  margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.blog-authors-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ff7b00;
+  border-radius: 999px;
+  margin-top: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+
+.blog-authors-intro {
+  color: var(--texto-corpo);
+  font-size: 1rem;
+  max-width: 620px;
+  margin-bottom: 2.75rem;
+}
+
+.blog-authors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.blog-author-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--borda-card);
+  border-radius: 16px;
+  padding: 2.1rem 1.85rem 1.85rem;
+  box-shadow: var(--sombra-card);
+  overflow: hidden;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-author-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff7b00, #1F4E5F);
+}
+
+.blog-author-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-hover);
+  border-color: rgba(255, 123, 0, 0.35);
+}
+
+.blog-author-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.blog-author-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1F4E5F;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+:root.dark .blog-author-avatar {
+  border-color: #ff7b00;
+}
+
+.blog-author-name {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--texto-titulo);
+  line-height: 1.3;
+}
+
+.blog-author-role {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--texto-meta);
+  margin-top: 2px;
+}
+
+.blog-author-bio {
+  color: var(--texto-corpo);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+
+.blog-author-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--borda-separador);
+}
+
+.blog-author-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1F4E5F;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+:root.dark .blog-author-link {
+  color: #ff7b00;
+}
+
+.blog-author-link:hover {
+  color: #ff7b00;
+}
+
+.blog-author-count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ff7b00;
+  background: rgba(255, 123, 0, 0.1);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .blog-authors-section {
+    padding: 3rem 0;
+  }
+
+  .blog-authors-kicker {
+    font-size: 0.72rem;
+  }
+
+  .blog-authors-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .blog-authors-section h2::after {
+    margin-top: 0.9rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .blog-authors-intro {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .blog-authors-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .blog-author-card {
+    padding: 1.75rem 1.5rem 1.5rem;
   }
 }
 

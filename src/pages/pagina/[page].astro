@@ -1,13 +1,29 @@
 ---
 import { getCollection } from 'astro:content';
-// 🚀 ADICIONADO: Importando as fontes locais Poppins
 import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
 
-import '../styles/global.css';
-import '../styles/blog.css';
+import '../../styles/global.css';
+import '../../styles/blog.css';
+
+// Página 1 vive na raiz ("/"), esse arquivo só gera a página 2 em diante.
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const totalPages = Math.ceil(posts.length / 9);
+
+  const paths = [];
+  for (let page = 2; page <= totalPages; page++) {
+    paths.push({ params: { page: String(page) } });
+  }
+  return paths;
+}
+
+const PAGE_SIZE = 9;
+
+const { page } = Astro.params;
+const currentPage = Number(page);
 
 const posts = (await getCollection('blog'))
   .sort((a, b) =>
@@ -15,38 +31,12 @@ const posts = (await getCollection('blog'))
     new Date(a.data.date).getTime()
   );
 
-// Paginação da raiz: página 1 fica em "/", as seguintes em "/pagina/2/", "/pagina/3/" etc.
-const PAGE_SIZE = 9;
 const totalPages = Math.ceil(posts.length / PAGE_SIZE);
-const pagePosts = posts.slice(0, PAGE_SIZE);
+const pagePosts = posts.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
-const authors = {
-  "Gean Carlos": {
-    name: "Gean Carlos",
-    role: "Cofundador • First Step Lab",
-    avatar: "/gean.webp",
-    bio: "Analista de Growth e fundador da First Step Lab. Escreve sobre LinkedIn, currículo, entrevistas e estratégia de candidatura.",
-    linkedin: "https://www.linkedin.com/in/gean-carlos-ribeiro/",
-  },
-  "Priscila Lima": {
-    name: "Priscila Lima",
-    role: "Especialista em Carreira • First Step Lab",
-    avatar: "/priscila.webp",
-    bio: "Especialista em carreira e recolocação, fundadora da GPL Consultoria de RH e formada pelo programa Gupy Experts. Mais de 90% dos clientes recolocados.",
-    linkedin: "https://www.linkedin.com/in/admrh-gislaine-priscila-lima/",
-  },
-};
-
-// Contagem de artigos por autor: dado que já vem do getCollection acima,
-// sem custo extra de fetch/build, só um reduce sobre o array em memória.
-// Cai em "Gean Carlos" se o author do frontmatter não bater com nenhum
-// cadastrado aqui (mesmo fallback usado em [slug].astro).
-const articleCountByAuthor = posts.reduce((acc, post) => {
-  const rawKey = post.data.author || "Gean Carlos";
-  const key = authors[rawKey] ? rawKey : "Gean Carlos";
-  acc[key] = (acc[key] || 0) + 1;
-  return acc;
-}, {});
+const prevHref = currentPage === 2 ? '/' : `/pagina/${currentPage - 1}/`;
+const nextHref = currentPage < totalPages ? `/pagina/${currentPage + 1}/` : null;
+const canonicalUrl = `https://blog.firststeplab.com.br/pagina/${currentPage}/`;
 ---
 
 <html lang="pt-BR">
@@ -62,45 +52,38 @@ const articleCountByAuthor = posts.reduce((acc, post) => {
 
     <meta charset="UTF-8" />
 
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Blog First Step Lab | LinkedIn, Currículo e Carreira</title>
+    <title>Blog First Step Lab | Página {currentPage}</title>
 
     <meta
       name="description"
       content="Conteúdos sobre LinkedIn, currículo, carreira e crescimento profissional."
     />
 
-    <link
-      rel="canonical"
-      href="https://blog.firststeplab.com.br/"
-    />
-
-    {totalPages > 1 && (
-      <link rel="next" href="https://blog.firststeplab.com.br/pagina/2/" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="prev" href={prevHref === '/' ? 'https://blog.firststeplab.com.br/' : `https://blog.firststeplab.com.br${prevHref}`} />
+    {nextHref && (
+      <link rel="next" href={`https://blog.firststeplab.com.br${nextHref}`} />
     )}
 
-    <meta property="og:type" content = "website" />
+    <meta property="og:type" content="website" />
 
     <meta
-     property="og:title"
-     content = "Blog | First Step Lab"
+      property="og:title"
+      content={`Blog | First Step Lab — Página ${currentPage}`}
     />
 
     <meta
-     property="og:description"
-     content = "Conteúdos sobre LinkedIn, currículo, carreira e crescimento profissional."
+      property="og:description"
+      content="Conteúdos sobre LinkedIn, currículo, carreira e crescimento profissional."
     />
 
-    <meta
-     property="og:url"
-     content = "https://blog.firststeplab.com.br/"
-    />
+    <meta property="og:url" content={canonicalUrl} />
 
     <meta
-     property="og:image"
-     content = "https://blog.firststeplab.com.br/og-default.jpg"
+      property="og:image"
+      content="https://blog.firststeplab.com.br/og-default.jpg"
     />
 
   </head>
@@ -144,16 +127,14 @@ const articleCountByAuthor = posts.reduce((acc, post) => {
 <div class="blog-grid">
 
             {
-              pagePosts.map((post, index) => (
+              pagePosts.map((post) => (
                 <article class="blog-card">
 
                   <a href={`/${post.id}/`} class="blog-card-image-link">
-                    <img 
-                      src={post.data.image} 
+                    <img
+                      src={post.data.image}
                       alt={`Capa do artigo: ${post.data.title}`}
-
-                      loading={index < 3 ? "eager" : "lazy"}
-
+                      loading="lazy"
                       width="600"
                       height="257"
                     />
@@ -185,63 +166,17 @@ const articleCountByAuthor = posts.reduce((acc, post) => {
 
           </div>
 
-          {totalPages > 1 && (
-            <nav class="blog-pagination" aria-label="Navegação de páginas do blog">
-              <span class="pagination-current">Página 1 de {totalPages}</span>
-              <a href="/pagina/2/" class="pagination-link pagination-next">
+          <nav class="blog-pagination" aria-label="Navegação de páginas do blog">
+            <a href={prevHref} class="pagination-link pagination-prev">
+              ← Página anterior
+            </a>
+            <span class="pagination-current">Página {currentPage} de {totalPages}</span>
+            {nextHref && (
+              <a href={nextHref} class="pagination-link pagination-next">
                 Próxima página →
               </a>
-            </nav>
-          )}
-
-        </div>
-      </section>
-
-      <section class="blog-authors-section">
-        <div class="container">
-
-          <span class="blog-authors-kicker">Equipe FSL</span>
-          <h2>Mentores que escrevem aqui</h2>
-          <p class="blog-authors-intro">
-            Todo conteúdo do blog é escrito por quem vive recrutamento na prática. Por quem contrata e por quem é contratdo.
-            Os dois lados da mesa.
-          </p>
-
-          <div class="blog-authors-grid">
-            {Object.entries(authors).map(([authorKey, author]) => {
-              const count = articleCountByAuthor[authorKey] || 0;
-              return (
-                <div class="blog-author-card">
-                  <div class="blog-author-header">
-                    <img
-                      src={author.avatar}
-                      alt={author.name}
-                      class="blog-author-avatar"
-                      width="56"
-                      height="56"
-                    />
-                    <div>
-                      <strong class="blog-author-name">{author.name}</strong>
-                      <span class="blog-author-role">{author.role}</span>
-                    </div>
-                  </div>
-
-                  <p class="blog-author-bio">{author.bio}</p>
-
-                  <div class="blog-author-footer">
-                    <a href={author.linkedin} target="_blank" rel="noopener" class="blog-author-link">
-                      Ver perfil no LinkedIn
-                    </a>
-                    {count > 0 && (
-                      <span class="blog-author-count">
-                        {count} {count === 1 ? "artigo publicado" : "artigos publicados"}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+            )}
+          </nav>
 
         </div>
       </section>
@@ -252,14 +187,14 @@ const articleCountByAuthor = posts.reduce((acc, post) => {
       <span class="footer-logo">First Step Lab</span>
       <p class="footer-tagline">O caminho mais curto para conseguir sua próxima vaga de emprego</p>
     </div>
-    
+
     <div class="footer-nav">
       <h3>Navegação</h3>
       <a href="https://firststeplab.com.br/">Home</a>
       <a href="https://firststeplab.com.br/sobre">Sobre</a>
       <a href="https://blog.firststeplab.com.br/">Blog</a>
     </div>
-    
+
     <div class="footer-social">
       <h3>Contato</h3>
       <a href="https://www.linkedin.com/company/first-step-lab" target="_blank" rel="noopener">LinkedIn</a>
@@ -280,10 +215,9 @@ const articleCountByAuthor = posts.reduce((acc, post) => {
   <button id="theme-toggle" class="theme-toggle" aria-label="Mudar tema">
   <svg class="icon-theme id-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
   <svg class="icon-theme id-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-  </button> 
+  </button>
 
 <script is:inline>
-  // 1. Descobre o tema correto (Salvo no PC, preferência do sistema ou padrão light)
   const getTheme = () => {
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
       return localStorage.getItem('theme');
@@ -291,14 +225,12 @@ const articleCountByAuthor = posts.reduce((acc, post) => {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   };
 
-  // 2. Aplica imediatamente no <html> para evitar o flash branco
   if (getTheme() === 'dark') {
     document.documentElement.classList.add('dark');
   } else {
     document.documentElement.classList.remove('dark');
   }
 
-  // 3. Aguarda o clique para alternar o tema e salvar a escolha do usuário
   document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('theme-toggle');
     toggle?.addEventListener('click', () => {
