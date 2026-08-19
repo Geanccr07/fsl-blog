@@ -9,7 +9,7 @@ seoTitle: "Vagas escondidas: O que são e como encontrar"
 category: "candidatura"
 tags: ["vagas escondidas", "busca de emprego", "LinkedIn"]
 cta_text: "Quero ter acesso gratuito"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=vagas_escondidas_como_encontrar#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/vagas-escondidas-como-encontrar.m4a"
 image: "/capas/vagas-escondidas.webp"
 ---

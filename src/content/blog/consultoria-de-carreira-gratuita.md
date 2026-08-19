@@ -9,7 +9,7 @@ seoTitle: "Consultoria de carreira gratuita"
 category: "candidatura"
 tags: ["carreira", "consultoria gratuita"]
 cta_text: "Quero minha consultoria gratuita"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=consultoria_de_carreira_gratuita#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 image: "/capas/consultoria-de-carreira-gratuita.webp"
 ---
 

@@ -9,7 +9,7 @@ authorRole: "Especialista em carreira | First Step Lab"
 authorImage: "/priscila.webp"
 seoTitle: "O que perguntar ao recrutador em entrevista de emprego remoto"
 cta_text: "Quero minha simulação de entrevista gratuita"
-cta_url: "https://firststeplab.com.br?utm_source=blog&utm_medium=content&utm_campaign=perguntas_recrutador_remoto"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/perguntas-para-recrutador-entrevista-remota.m4a"
 image: "/capas/perguntas-para-recrutador-entrevista-remota.webp"
 

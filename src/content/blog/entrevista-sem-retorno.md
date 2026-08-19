@@ -8,7 +8,7 @@ authorImage: "/gean.webp"
 category: "entrevista"
 tags: ["entrevista sem retorno", "ansiedade processo seletivo"]
 cta_text: "Quero ajuda"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=entrevista_sem_retorno#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/entrevista-sem-retorno.m4a"
 image: "/capas/entrevista-sem-retorno.webp"
 ---

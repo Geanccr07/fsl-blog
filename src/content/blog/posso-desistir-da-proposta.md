@@ -10,7 +10,7 @@ authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Aceitei uma proposta de emprego e quero desistir"
 cta_text: "Quero participar da comunidade gratuita"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=posso_desistir_da_proposta#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/posso-desistir-da-proposta.m4a"
 image: "/capas/posso-desistir-da-proposta.webp"
 

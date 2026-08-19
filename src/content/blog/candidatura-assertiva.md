@@ -9,7 +9,7 @@ authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Candidatura assertiva: o que realmente funciona"
 cta_text: "Quero participar da comunidade gratuita"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=candidatura_assertiva#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/candidatura-assertiva.m4a"
 image: "/capas/candidatura-assertiva.webp"
 

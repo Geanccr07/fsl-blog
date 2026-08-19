@@ -9,7 +9,7 @@ authorRole: "Especialista em carreira | First Step Lab"
 authorImage: "/priscila.webp"
 seoTitle: "O que falar quando pedem 'fale sobre você' na entrevista"
 cta_text: "Agendar simulação de entrevista gratuita"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=como_falar_sobre_voce_na_entrevista#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/como-falar-sobre-voce-na-entrevista.m4a"
 image: "/capas/como-falar-sobre-voce-na-entrevista.webp"
 ---

@@ -9,7 +9,7 @@ authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Como pedir recomendação no LinkedIn"
 cta_text: "Quero uma consultoria gratuita de LinkedIn"
-cta_url: "https://firststeplab.com.br?utm_source=blog&utm_medium=content&utm_campaign=recomendacao_linkedin#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/como-pedir-recomendacao-linkedin.m4a"
 image: "/capas/como-pedir-recomendacao-linkedin.webp"
 

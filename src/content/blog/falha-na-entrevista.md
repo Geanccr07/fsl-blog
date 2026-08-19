@@ -9,7 +9,7 @@ seoTitle: "Como responder 'me fale sobre uma falha sua' na entrevista"
 category: "entrevista"
 tags: ["entrevista de emprego", "processo seletivo", "dicas de entrevista"]
 cta_text: "Quero me preparar melhor"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=falha_na_entrevista#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/falha-na-entrevista.m4a"
 image: "/capas/falha-na-entrevista.webp"
 ---

@@ -9,7 +9,7 @@ authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Currículo vazio? O que colocar quando não tem experiência"
 cta_text: "Acessar template gratuito"
-cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=curriculo_sem_experiencia_guia#leadForm"
+cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/curriculo-sem-experiencia-guia.m4a"
 image: "/capas/curriculo-sem-experiencia.webp"
 ---
