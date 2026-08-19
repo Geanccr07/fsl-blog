@@ -2,6 +2,7 @@
 title: "O que perguntar ao recrutador em uma entrevista de emprego remoto"
 description: "Descubra as perguntas certas (e as que jogam contra você) pra fazer numa entrevista de emprego remoto, etapa por etapa."
 date: 2026-07-25
+category: "entrevista"
 tags: ["dicas de entrevista", "trabalho remoto"]
 author: "Priscila Lima"
 authorRole: "Especialista em carreira | First Step Lab"
@@ -106,7 +107,7 @@ As perguntas boas de um processo não são as mesmas de outro. Alguns fatores mu
 
 Fazer a pergunta certa não garante a vaga sozinha, mas junto com otimismo genuíno, pesquisa prévia sobre a empresa e clareza sobre o que você busca, ela te coloca num grupo pequeno de candidatos que tratam a entrevista pelo que ela realmente é: uma conversa de mão dupla, longe de um interrogatório que te coloca contra a parede todas as vezes.
 
-Quem pergunta bem entende melhor o cargo que está disputando, e isso reflete direto em como você fala de si mesmo no resto do processo. Fica mais fácil se posicionar quando você já sabe o que está sendo avaliado do outro lado da mesa.
+Quem pergunta bem entende melhor o cargo que está disputando, e isso reflete direto em como você fala de si mesmo no resto do processo. Fica mais fácil se posicionar quando você já sabe o que está sendo avaliado do outro lado da mesa. É a mesma clareza que ajuda [a responder bem quando o recrutador pede pra você falar sobre você mesmo](/como-falar-sobre-voce-na-entrevista/).
 
 Tudo isso melhora com prática, muito mais do que com leitura. Simular a entrevista antes de fazer ela de verdade revela coisas que nenhum artigo mostra: o jeito como sua voz muda quando você fica nervoso, a pergunta que soa natural na sua cabeça mas trava na hora de sair da boca.
 

@@ -2,6 +2,7 @@
 title: "Candidatura assertiva: o que realmente funciona pra você ser chamado mais rápido"
 description: "Cansado de se candidatar e não ser chamado? Veja o que de fato aumenta suas chances de entrevista, sem fórmula mágica e sem promessa que ninguém consegue garantir."
 date: 2026-07-18
+category: "candidatura"
 tags: ["candidatura", "processo seletivo"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
@@ -93,11 +94,13 @@ Essa aqui talvez já tenham falado em algum lugar, mas vou aprofundar o motivo p
 
 Empresa pequena ou média não tem estrutura pra deixar vaga aberta um mês, dois, três. Costuma ficar pouco tempo no ar. Quem se candidata primeiro tem muito mais chance de ter o currículo visto, o perfil do LinkedIn visto. E só o fato de você não ser mais um estranho quando manda o convite de conexão já é um detalhe que pesa. Isso não é achismo, é psicologia, é como a mente funciona. Chama-se princípio da familiaridade, e ele trabalha a seu favor quando você se candidata rápido, não semanas depois que a vaga foi postada.
 
+Esse mesmo princípio é a base de [como encontrar vagas escondidas fora da aba oficial do LinkedIn](/vagas-escondidas-como-encontrar/), onde a concorrência é bem menor.
+
 ## Personalize a candidatura, currículo genérico não passa
 
 Isso aqui não é só conselho bonito, tem número por trás. Já vi levantamento apontando diferença de até 40 pontos percentuais na compatibilidade entre um currículo genérico e um currículo adaptado pra vaga, quando passa pelos filtros automáticos (ATS) que boa parte das empresas usa antes de qualquer humano ler seu material. E não para no ATS: quando o recrutador bate o olho e já vê nas primeiras linhas a habilidade e o termo exato que ele buscava pra posição, a chance de você seguir no processo aumenta.
 
-Leva uns 10, 15 minutos adaptar um currículo bem feito quando você tem método. Não é sobre reescrever do zero pra cada vaga, é sobre ajustar palavra-chave, reordenar o que é mais relevante pra aquela posição específica, cortar o que não serve. Pouco tempo investido, resultado bem maior do lado de cá.
+Leva uns 10, 15 minutos adaptar um currículo bem feito quando você tem método. Não é sobre reescrever do zero pra cada vaga, é sobre ajustar palavra-chave, reordenar o que é mais relevante pra aquela posição específica, cortar o que não serve. Pouco tempo investido, resultado bem maior do lado de cá. Mesmo assim, boa parte das candidaturas ainda some sem resposta, e [os bastidores completos de por que isso acontece](/processo-seletivo-sem-retorno/) explicam o que está por trás do silêncio.
 
 O mesmo vale pra mensagem que acompanha a candidatura, quando o processo permite uma. Mensagem genérica de "gostaria de me candidatar a essa vaga" não soma nada. Uma linha dizendo por que você, especificamente, faz sentido pra aquela posição, já muda a percepção de quem está lendo.
 

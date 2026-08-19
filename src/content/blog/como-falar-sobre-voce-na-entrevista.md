@@ -1,12 +1,13 @@
 ---
 title: "Como falar sobre você na entrevista sem parecer que está lendo um roteiro"
-description: "Sabe o que fez, mas trava na hora de explicar? Veja como transformar suas experiências em respostas que despertam interesse do recrutador: com exemplos práticos."
+description: "Travou tentando responder 'me fale sobre você' (ou 'sobre mim') numa entrevista? Veja como transformar suas experiências em respostas que despertam interesse do recrutador, com exemplos práticos."
 date: 2025-06-27
+category: "entrevista"
 tags: ["processo seletivo", "dicas de entrevista"]
 author: "Priscila Lima"
 authorRole: "Especialista em carreira | First Step Lab"
 authorImage: "/priscila.webp"
-seoTitle: "Como falar sobre você na entrevista"
+seoTitle: "O que falar quando pedem 'fale sobre você' na entrevista"
 cta_text: "Agendar simulação de entrevista gratuita"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=como_falar_sobre_voce_na_entrevista#leadForm"
 audio_url: "/audios/como-falar-sobre-voce-na-entrevista.m4a"
@@ -73,7 +74,7 @@ Começa muito antes da entrevista. Começa quando você manda o currículo acomp
 
 Segundo dados de pesquisas na área de recrutamento, cerca de 47% dos recrutadores consideram o interesse genuíno do candidato o critério mais importante na hora de escolher entre perfis com qualificações similares. Não é o mais experiente que passa. Às vezes, é quem demonstrou que realmente quer estar ali.
 
-Na entrevista, entusiasmo aparece em coisas específicas: saber por que aquela empresa e não outra qualquer, ter uma pergunta genuína sobre o cargo, mencionar algo concreto que você pesquisou sobre o produto ou sobre a cultura. Fazer perguntas para o entrevistador não é só educação, é uma das formas mais eficazes de mostrar interesse genuíno, porque transforma o monólogo em uma conversa verdadeira.
+Na entrevista, entusiasmo aparece em coisas específicas: saber por que aquela empresa e não outra qualquer, ter uma pergunta genuína sobre o cargo, mencionar algo concreto que você pesquisou sobre o produto ou sobre a cultura. Fazer perguntas para o entrevistador não é só educação, é uma das formas mais eficazes de mostrar interesse genuíno, porque transforma o monólogo em uma conversa verdadeira. [Saber quais perguntas fazer ao recrutador numa entrevista remota](/perguntas-para-entrevista-remota/) é parte dessa preparação.
 
 Sabe aquela pessoa que fala com naturalidade sobre o que fez, que não parece estar recitando nada, que você fica na dúvida se é tão boa mesmo ou só comunica muito bem? É exatamente esse o ponto. Falar sobre resultados é uma coisa. Falar sobre resultados com segurança e naturalidade é outra completamente diferente. A segunda é a que mais convence.
 
@@ -104,6 +105,8 @@ Acontece com todo mundo. A entrevista começa, o clima está bom, e de repente v
 
 Travar uma vez durante a conversa não é um problema. Recrutadores sabem que entrevista gera pressão nos candidatos. O que pesa é gaguejar em cada resposta, preencher tudo com "hm", "tipo", "sabe?", ou dar respostas vagas que não chegam a lugar nenhum. Por isso, trabalhar a comunicação é parte da preparação.
 
+Essa mesma trava aparece em praticamente qualquer pergunta difícil, incluindo [como responder quando pedem pra falar sobre uma falha sua sem queimar o filme](/falha-na-entrevista/).
+
 Dito isso, quando a trava acontece, aqui estão três saídas que funcionam:
 
 **Repita a pergunta em voz alta.** Parece simples, mas cumpre duas funções ao mesmo tempo. Garante ao recrutador que você está presente e prestando atenção, e dá alguns segundos para o seu cérebro organizar a resposta.
@@ -117,6 +120,8 @@ Dito isso, quando a trava acontece, aqui estão três saídas que funcionam:
 Tudo o que você leu aqui só vira resultado se você praticar. Ler sobre entrevista prepara a cabeça. Simular a entrevista prepara o corpo inteiro: a voz, o ritmo e a forma como você organiza o pensamento quando está sob pressão.
 
 A diferença entre quem leu dez artigos sobre entrevista e quem treinou ao vivo com feedback de alguém que já viu centenas de processos do lado de dentro é enorme. Não porque um seja mais inteligente que o outro, mas porque a prática revela coisas que a leitura não revela: o vício de linguagem que você não percebe, a resposta que soa bem na cabeça mas perde o fio no meio, o momento em que você acelera demais porque ficou nervoso.
+
+E se depois de toda essa preparação a resposta não vier, [o que fazer com a ansiedade da espera depois de uma entrevista que foi bem](/entrevista-sem-retorno/) é o próximo passo.
 
 A First Step Lab oferece simulações de entrevista gratuitas com especialista em carreira e realocação. O objetivo não é te dar um roteiro, mas sim te mostrar o que está funcionando e o que vale ajustar, para que na próxima conversa com um recrutador você chegue diferente e tenha mais chances de avançar no processo seletivo.
 

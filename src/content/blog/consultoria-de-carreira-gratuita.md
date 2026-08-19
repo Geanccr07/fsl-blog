@@ -6,6 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Consultoria de carreira gratuita"
+category: "candidatura"
 tags: ["carreira", "consultoria gratuita"]
 cta_text: "Quero minha consultoria gratuita"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=consultoria_de_carreira_gratuita#leadForm"
@@ -27,7 +28,7 @@ A consultoria não é só para quem está desesperado. Ela é útil em momentos 
 
 **Quem está buscando o primeiro emprego na área.** A faculdade dá base teórica, mas raramente prepara o profissional para o processo seletivo, para montar um perfil que atrai recrutadores ou para entender como o mercado funciona de verdade. Quem está entrando agora tem muitas dúvidas e poucas referências práticas. A consultoria encurta esse caminho.
 
-**Quem se candidata bastante mas não tem retorno.** Mandar currículo para centenas de vagas e não receber nem um "não" é desgastante e confuso. Quando isso acontece, o candidato começa a trocar o currículo, mexer no LinkedIn, fazer mais cursos, mudar o tom da carta de apresentação... e o ciclo continua. Muitas vezes, o problema não está onde a pessoa acha que está.
+**Quem se candidata bastante mas não tem retorno.** Mandar currículo para centenas de vagas e não receber nem um "não" é desgastante e confuso. Quando isso acontece, o candidato começa a trocar o currículo, mexer no LinkedIn, fazer mais cursos, mudar o tom da carta de apresentação... e o ciclo continua. Muitas vezes, o problema não está onde a pessoa acha que está, e [os bastidores completos de por que isso acontece](/processo-seletivo-sem-retorno/) mostram onde de fato costuma travar.
 
 **Quem quer mudar de área mas não sabe como se reposicionar.** Migrar de área é possível. Mas sem estratégia, o processo vira um caminho longo e frustrante. A auto-sabotagem aparece rápido: "não tenho experiência", "como vou provar que consigo?", "os recrutadores da nova área não vão me considerar". Uma consultoria ajuda a mapear o que você já tem de aproveitável e a construir o argumento certo para a nova área.
 

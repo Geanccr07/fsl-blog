@@ -1,7 +1,8 @@
 ---
 title: "Como pedir recomendação no LinkedIn (do jeito certo)"
-description: "Recomendação no LinkedIn é um dos recursos mais esquecidos do perfil. Veja quando pedir, pra quem pedir, e como pedir sem parecer favor ou virar recomendação genérica."
+description: "Como pedir recomendação no LinkedIn sem parecer favor ou virar recomendação genérica? Veja quando pedir, pra quem pedir e o passo a passo dentro da plataforma."
 date: 2026-08-08
+category: "linkedin"
 tags: ["linkedin", "carreira"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"

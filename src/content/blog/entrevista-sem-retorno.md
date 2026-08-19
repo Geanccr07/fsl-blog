@@ -5,6 +5,7 @@ date: 2025-05-30
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
+category: "entrevista"
 tags: ["entrevista sem retorno", "ansiedade processo seletivo"]
 cta_text: "Quero ajuda"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=entrevista_sem_retorno#leadForm"
@@ -95,6 +96,8 @@ O "quase" não existe mais. O processo fechou. O que existe é o que você faz a
 Você não controla o prazo de retorno. Não controla a decisão interna da empresa. Não controla quantos candidatos estão sendo avaliados ou o que o gestor pensa.
 
 O que você controla é o que oferece e como se apresenta. Continuar se candidatando. Ajustar o material. Aparecer nos lugares certos. Enviar um follow-up com o tom adequado. Não parar enquanto espera.
+
+Se ainda não rolou a próxima entrevista, vale revisar [como estruturar sua apresentação pessoal sem parecer decorado](/como-falar-sobre-voce-na-entrevista/) e [como responder bem à pergunta sobre uma falha sua](/falha-na-entrevista/), duas das perguntas que mais pesam no resultado final.
 
 O silêncio de uma empresa diz sobre a cultura daquela empresa. Não sobre o seu valor como profissional.
 

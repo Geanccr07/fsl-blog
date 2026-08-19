@@ -6,6 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Como montar seu perfil do LinkedIn"
+category: "linkedin"
 tags: ["linkedin", "carreira"]
 image: "/capas/linkedin-perfil-que-atrai-recrutadores.webp"
 ---
@@ -73,6 +74,8 @@ O feed do LinkedIn está cheio de conteúdo genérico. Quando aparece algo autê
 O LinkedIn oferece dados gratuitos que a maioria ignora. O número mais importante é o de resultados de pesquisa: quantas vezes você apareceu quando alguém buscou na plataforma, quem buscou e O QUE BUSCOU. Se esse número é baixo ou incoerente, suas palavras-chave precisam de ajuste. Se aparecem cargos fora do seu objetivo nas pesquisas que te encontraram, a narrativa ainda não está alinhada.
 
 Reserve 30 minutos por semana para olhar esses dados e ajustar o que precisar. Seu Perfil no LinkedIn é VIVO.
+
+Tem outro recurso do perfil que reforça tudo isso e que quase ninguém explora: a recomendação. Depois de ajustar headline, Sobre e experiências, vale entender [como pedir recomendação no LinkedIn do jeito certo](/como-pedir-recomendacao-linkedin/) antes de seguir pro próximo passo.
 
 ## Conclusão
 

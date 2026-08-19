@@ -2,10 +2,12 @@
 title: "O que colocar no currículo sem experiência: o guia definitivo"
 description: "Currículo vazio por falta de experiência? Veja exatamente o que colocar em cada seção, com exemplos reais de como chamar atenção do recrutador."
 date: 2025-06-19
+category: "curriculo"
 tags: ["primeiro emprego", "como fazer currículo"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
+seoTitle: "Currículo vazio? O que colocar quando não tem experiência"
 cta_text: "Acessar template gratuito"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=curriculo_sem_experiencia_guia#leadForm"
 audio_url: "/audios/curriculo-sem-experiencia-guia.m4a"
@@ -59,6 +61,8 @@ O objetivo profissional é um parágrafo curto, de três a cinco linhas, que res
 **Forte:** "Busco vaga como Assistente de Marketing Digital para aplicar conhecimentos em criação de conteúdo, gestão de redes sociais e análise de métricas adquiridos em projetos pessoais e cursos na área. Tenho interesse especial em growth e performance de conteúdo orgânico."
 
 A diferença é clareza. O segundo diz o cargo, diz o que sabe, diz o que quer. O recrutador entende em dez segundos quem está do outro lado. Percebe a diferença?
+
+Tem uma variação desse erro que aparece bastante em quem está montando o primeiro currículo: colocar "disponível para qualquer vaga" no lugar do objetivo, ou algo do tipo "aberto a qualquer oportunidade". Parece um jeito esperto de aumentar as chances, mostrando que você toparia qualquer coisa. Na prática faz o oposto. Perfil sem direção nenhuma é dos primeiros que o recrutador descarta, porque contratar alguém que serve pra tudo é risco pra quem contrata. Se você realmente está aberto a mais de uma área, o caminho é ter dois currículos direcionados, um pra cada cargo específico, em vez de um só tentando servir pra tudo.
 
 ## Formação acadêmica: mais do que escola e ano de conclusão
 
@@ -131,6 +135,8 @@ A maioria das pessoas que chegam até esse ponto do artigo já tem mais material
 O currículo sem experiência não é um documento incompleto à espera de um primeiro emprego para ganhar conteúdo. É um documento que exige mais cuidado na curadoria justamente porque cada elemento precisa trabalhar mais. Objetivo claro, formação bem descrita, habilidades específicas e qualquer projeto ou atividade com responsabilidade verdadeira. Quando tudo isso está organizado com as palavras certas para a vaga certa, o currículo faz o trabalho que precisa fazer: convencer o recrutador de que você é a pessoa certa.
 
 O próximo passo não é esperar ter mais experiência para montar um currículo melhor. É montar o melhor currículo possível com o que você já tem agora, se candidatar, medir o que está funcionando e ajustar. O currículo perfeito não existe. O currículo que te coloca em movimento e mais perto da primeira vaga, existe.
+
+Depois de organizar o currículo, o próximo ponto de atenção é entender [por que processos seletivos inteiros somem sem dar retorno](/processo-seletivo-sem-retorno/), porque currículo bom também depende do que acontece depois de enviado.
 
 Se quiser sair com uma estrutura pronta para editar, a First Step Lab tem um template gratuito feito para quem está nesse momento.
 

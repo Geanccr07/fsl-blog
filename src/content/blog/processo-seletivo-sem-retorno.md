@@ -6,6 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Processo seletivo sem retorno: o que fazer"
+category: "candidatura"
 tags: ["processo seletivo", "currículo", "ATS"]
 cta_text: "Quero ajuda com meu currículo"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=processo_seletivo_sem_retorno#leadForm"
@@ -26,7 +27,7 @@ Quando uma vaga aparece no LinkedIn ou na Gupy, parece uma oportunidade direta. 
 
 Na prática, uma vaga de entrada pode receber mais de 250 candidaturas. Posições remotas ou muito divulgadas chegam a 1.000 aplicações na primeira semana. O mesmo recrutador que vai ler o seu currículo está gerenciando 20, 30, às vezes mais processos ao mesmo tempo.
 
-Não é desatenção. É volume. E volume muda completamente as regras do mercado.
+Não é desatenção. É volume. E volume muda completamente as regras do mercado. Isso vale ainda mais pra vaga que você encontrou na aba oficial do LinkedIn: boa parte das oportunidades reais nem chega a aparecer lá, e [aprender a encontrar essas vagas escondidas](/vagas-escondidas-como-encontrar/) já reduz a concorrência antes mesmo de você mandar o currículo.
 
 ## O que é o ATS e por que ele importa para você
 
@@ -68,7 +69,7 @@ A variável que você pode controlar é o currículo. E é nela que vale concent
 
 ## O que realmente faz diferença na prática
 
-Método aqui é mais importante que volume. Mandar 100 currículos iguais para vagas diferentes não é estratégia, é aposta. Algumas mudanças práticas que mudam o resultado:
+Método aqui é mais importante que volume. Mandar 100 currículos iguais para vagas diferentes não é estratégia, é aposta. Se seu currículo ainda tem pouco conteúdo pra ajustar porque você está começando agora, [este guia sobre o que colocar no currículo sem experiência](/curriculo-sem-experiencia-guia/) resolve isso antes de qualquer ajuste de palavra-chave. Algumas mudanças práticas que mudam o resultado:
 
 **Leia a descrição da vaga antes de aplicar.** Parece óbvio, mas a maioria aplica sem ler com atenção. A descrição entrega as palavras que você precisa usar no currículo.
 
@@ -81,6 +82,8 @@ Método aqui é mais importante que volume. Mandar 100 currículos iguais para v
 **Não trate o currículo como documento pronto.** Ele precisa ser revisado a cada ciclo de candidaturas. O que não está gerando retorno precisa ser ajustado.
 
 Não existe currículo perfeito. Existe currículo que está funcionando para o objetivo atual, e currículo que precisa de ajuste.
+
+Currículo ajustado resolve metade do problema. A outra metade é [o que realmente funciona numa candidatura assertiva](/candidatura-assertiva/), antes e depois de mandar o material. Quantidade também entra nessa conta: [quantas candidaturas por dia realmente valem a pena](/quantas-candidaturas-para-conseguir-emprego/) é outra pergunta que merece resposta própria, porque mandar mais nem sempre é mandar melhor.
 
 ## Consistência resolve o que o desânimo dissolve
 

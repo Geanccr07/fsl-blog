@@ -6,6 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Como responder 'me fale sobre uma falha sua' na entrevista"
+category: "entrevista"
 tags: ["entrevista de emprego", "processo seletivo", "dicas de entrevista"]
 cta_text: "Quero me preparar melhor"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=falha_na_entrevista#leadForm"
@@ -101,7 +102,7 @@ Você precisa conhecer sua trajetória com clareza. Saber o que já passou, o qu
 
 O profissional que chega na entrevista sabendo exatamente sua narrativa, o que quer, o que tem e o que precisa desenvolver, responde essa pergunta de forma completamente diferente de quem chega sem essa clareza. Não porque ensaiou mais, mas porque tem mais para dizer de verdade.
 
-E tem um detalhe que vai além da entrevista: essa clareza sobre si mesmo é o que permite construir um LinkedIn coerente, um currículo com narrativa consistente, um follow-up depois de um processo que soa seguro e não desesperado. Tudo isso se conecta.
+E tem um detalhe que vai além da entrevista: essa clareza sobre si mesmo é o que permite construir um LinkedIn coerente, um currículo com narrativa consistente, um follow-up depois de um processo que soa seguro e não desesperado. Tudo isso se conecta. É a mesma clareza que resolve [a pergunta "me fale sobre você" logo na abertura da entrevista](/como-falar-sobre-voce-na-entrevista/).
 
 Não é algo que se constrói em uma tarde de preparação. É um processo. Quanto mais você desenvolve essa clareza, mais fácil fica responder perguntas como essa de forma natural, sem parecer que está lendo de um roteiro que você montou às onze da noite antes da chamada.
 
@@ -111,3 +112,5 @@ A boa notícia é que qualquer candidato que chega numa entrevista com essa clar
 
 > **Quer se preparar melhor para suas entrevistas?**
 > O Guia de Entrevistas da First Step Lab traz estruturas práticas, exemplos e tudo que você precisa para chegar na conversa com mais clareza e confiança.
+
+Se a entrevista já rolou e agora é só esperar, [o que fazer com a ansiedade da espera por retorno depois da entrevista](/entrevista-sem-retorno/) é o próximo passo.

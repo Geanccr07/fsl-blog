@@ -2,6 +2,7 @@
 title: "Quantas candidaturas por dia para conseguir emprego? O que ninguém quer ouvir"
 description: "Mandar 30 candidaturas por dia não está funcionando? Descubra por que quantidade sem critério é spam e o que fazer diferente para ter retorno de verdade."
 date: 2025-06-08
+category: "candidatura"
 tags: ["processo seletivo", "currículo", "ATS"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
@@ -41,7 +42,7 @@ A grosso modo, seu currículo tem que falar a língua do filtro. Se a vaga pede 
 
 Pensa no caso de alguém que manda o mesmo currículo para uma vaga de Social Media e uma vaga de Analista de Dados no mesmo dia. Linguagem diferente, palavras-chave diferentes, contexto completamente diferente. Nenhuma das duas vai retornar porque o currículo não fala a língua de nenhuma. Parece óbvio quando descrito assim, mas é exatamente o que acontece quando a candidatura vira rotina automática.
 
-Isso não acontece porque as empresas querem dificultar a vida de ninguém. Acontece porque é operacionalmente inviável filtrar centenas de currículos manualmente. A IA resolve o volume, mas ainda erra com frequência, e candidatos qualificados são descartados por isso o tempo todo. Em 2025, 83% das empresas planejavam usar IA para triagem de currículos, segundo dados do mercado americano. E 62% dos gerentes de contratação já descartam currículos gerados por IA sem personalização.
+Isso não acontece porque as empresas querem dificultar a vida de ninguém. Acontece porque é operacionalmente inviável filtrar centenas de currículos manualmente, e [os bastidores completos de por que processos somem sem resposta](/processo-seletivo-sem-retorno/) vão além só do ATS. A IA resolve o volume, mas ainda erra com frequência, e candidatos qualificados são descartados por isso o tempo todo. Em 2025, 83% das empresas planejavam usar IA para triagem de currículos, segundo dados do mercado americano. E 62% dos gerentes de contratação já descartam currículos gerados por IA sem personalização.
 
 90% dos candidatos enviam candidaturas com currículos genéricos. Currículos personalizados recebem três vezes mais entrevistas, segundo estudo da Ladders de 2024. Mesmo assim, a maioria continua mandando o mesmo currículo para tudo.
 
@@ -53,7 +54,7 @@ O que muda de verdade é uma combinação de consistência, método e uma mental
 
 **Narrativa alinhada primeiro.** Antes de mandar qualquer candidatura, seu currículo e LinkedIn precisam estar ajustados para o cargo que você quer. Palavras-chave certas, descrições de experiência que falam a língua das vagas que você está buscando, narrativa consistente do título até a última linha. Quando isso está no lugar, o material trabalha por você antes mesmo de alguém abrir o arquivo.
 
-**Candidatura com critério, não com volume.** Em vez de aplicar no escuro para tudo que aparece, você escolhe vagas com fit de verdade. Pesquisa por palavras-chave do seu radar, usa buscas avançadas nas publicações do LinkedIn, faz conexões estratégicas com recrutadores da área que você busca. Usa os filtros e a busca com IA do LinkedIn focando exatamente no cargo que almeja. Isso reduz o volume de candidaturas, mas aumenta muito a taxa de retorno.
+**Candidatura com critério, não com volume.** Em vez de aplicar no escuro para tudo que aparece, você escolhe vagas com fit de verdade. Pesquisa por palavras-chave do seu radar, usa [buscas avançadas nas publicações do LinkedIn pra achar vagas escondidas](/vagas-escondidas-como-encontrar/), faz conexões estratégicas com recrutadores da área que você busca. Usa os filtros e a busca com IA do LinkedIn focando exatamente no cargo que almeja. Isso reduz o volume de candidaturas, mas aumenta muito a taxa de retorno.
 
 Um volume razoável para quem está aplicando com método fica entre 5 e 10 candidaturas por dia em vagas realmente compatíveis. Menos spam e mais resultado.
 

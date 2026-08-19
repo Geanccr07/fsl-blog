@@ -1,8 +1,9 @@
 ---
 
 title: "Aceitei uma proposta de emprego e quero desistir: o que acontece?"
-description: "Posso desistir do emprego antes de começar? Saiba o que a lei diz, o que pode acontecer na prática e como comunicar a empresa sem queimar sua reputação."
+description: "Sim, você pode desistir de uma proposta de emprego antes de assinar o contrato, sem multa e sem processo trabalhista. Entenda o que muda dependendo da etapa e como comunicar sem queimar sua reputação."
 date: 2025-07-05
+category: "candidatura"
 tags: ["processo seletivo", "emprego"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
@@ -105,4 +106,4 @@ A experiência de quase mudar de emprego, seja porque você desistiu ou porque r
 
 Quem tem esses critérios definidos antes de entrar num processo seletivo toma decisões mais rápidas e chega ao final delas com menos arrependimento. Não porque a escolha foi perfeita, mas sim porque foi consciente. A pior decisão não é escolher A quando B também era boa. É ficar parado sem decidir porque tinha medo de se arrepender.
 
-Se você ainda não tem clareza sobre esses critérios, a First Step Lab tem materiais e uma comunidade inteira voltada para ajudar profissionais a navegar esse tipo de transição com mais segurança. Desde a candidatura até o momento de aceitar ou recusar uma proposta.
+Se você ainda não tem clareza sobre esses critérios, [uma consultoria de carreira gratuita](/consultoria-de-carreira-gratuita/) ajuda a organizar isso antes do próximo processo, e a First Step Lab tem materiais e uma comunidade inteira voltada para ajudar profissionais a navegar esse tipo de transição com mais segurança. Desde a candidatura até o momento de aceitar ou recusar uma proposta.

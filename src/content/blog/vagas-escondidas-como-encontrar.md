@@ -6,6 +6,7 @@ author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
 seoTitle: "Vagas escondidas: O que são e como encontrar"
+category: "candidatura"
 tags: ["vagas escondidas", "busca de emprego", "LinkedIn"]
 cta_text: "Quero ter acesso gratuito"
 cta_url: "https://firststeplab.com.br/?utm_source=blog&utm_medium=content&utm_campaign=vagas_escondidas_como_encontrar#leadForm"
@@ -92,7 +93,7 @@ Uma vez eu recebi uma visita de perfil no LinkedIn. Enviei um convite para conex
 
 Parece pequeno. É exatamente esse o ponto.
 
-Mandar convite para quem visualizou seu perfil. Interagir com posts de recrutadores da área que você quer entrar. Responder rápido quando alguém entra em contato. Aplicar nos primeiros dias depois que a vaga é publicada, quando o volume de candidatos ainda é baixo.
+Mandar convite para quem visualizou seu perfil. Interagir com posts de recrutadores da área que você quer entrar. Responder rápido quando alguém entra em contato. Aplicar nos primeiros dias depois que a vaga é publicada, quando o volume de candidatos ainda é baixo. Esse mesmo princípio da familiaridade é a base de [o que realmente funciona numa candidatura assertiva](/candidatura-assertiva/).
 
 Nenhuma dessas ações resolve sozinha. Mas acumuladas, elas aumentam a superfície de contato com oportunidades. E a lógica do mercado de trabalho, em boa parte, funciona assim: quem aparece mais tem mais chance de estar no lugar certo na hora certa.
 
@@ -105,6 +106,8 @@ Quem usa só a aba oficial de vagas está esperando o mercado aparecer. Quem apr
 Existem muito mais vagas do que as que aparecem no seu feed. A maioria nunca vai aparecer lá. Aprender a encontrá-las é uma vantagem competitiva, e é uma das poucas que não depende de ter mais experiência, mais certificado ou mais conexões.
 
 Depende de procurar de forma diferente.
+
+Encontrar a vaga certa é só a primeira parte. [O que faz um currículo avançar ou travar dentro do processo seletivo](/processo-seletivo-sem-retorno/) decide o resto.
 
 ---
 
