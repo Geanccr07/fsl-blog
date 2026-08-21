@@ -199,6 +199,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     url: `https://blog.firststeplab.com.br/${post.id}/`
   })}
 />
+
+{
+  post.data.faq && post.data.faq.length > 0 && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.data.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer
+          }
+        }))
+      })}
+    />
+  )
+}
 </head>
 
 <body class="page-blog">
@@ -297,6 +317,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               {post.data.cta_text}
             </a>
           </div>
+        )
+      }
+
+      {
+        post.data.faq && post.data.faq.length > 0 && (
+          <section class="post-faq">
+            <h2>Dúvidas frequentes dos leitores</h2>
+
+            {post.data.faq.map((item) => (
+              <details class="post-faq-item">
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </section>
         )
       }
     </article>

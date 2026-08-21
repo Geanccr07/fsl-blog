@@ -30,6 +30,15 @@ const blog = defineCollection({
 
     cta_text: z.string().optional(),
     cta_url: z.string().optional(),
+
+    // Seção "Dúvidas frequentes dos leitores", renderizada no fim do artigo
+    // com dado estruturado FAQPage (schema.org) pra elegibilidade a rich
+    // snippet de pergunta/resposta no Google. Opcional pra não quebrar
+    // artigos antigos que ainda não têm.
+    faq: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 
