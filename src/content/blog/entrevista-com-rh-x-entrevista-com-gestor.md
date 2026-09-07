@@ -7,7 +7,7 @@ tags: ["dicas de entrevista", "RH"]
 author: "Priscila Lima"
 authorRole: "Especialista em carreira | First Step Lab"
 authorImage: "/priscila.webp"
-seoTitle: "Entrevista com RH x entrevista com gestor: o que muda"
+seoTitle: "Entrevista com RH x gestor: o que muda"
 cta_text: "Quero minha simulação de entrevista gratuita"
 cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/entrevista-com-rh-x-entrevista-com-gestor.m4a"
