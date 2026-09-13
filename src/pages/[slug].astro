@@ -65,7 +65,6 @@ const authorsData = {
     avatar: "/gean.webp",
     bio: "Gean Carlos é Analista de Growth e fundador da First Step Lab. Compartilha conteúdos sobre LinkedIn, currículo, entrevistas e estratégias de carreira para ajudar profissionais a conquistarem vagas.",
     linkedin: "https://www.linkedin.com/in/gean-carlos-ribeiro/",
-    community: "https://firststeplab.com.br/#leadForm"
   },
   "Priscila Lima": {
     name: "Priscila Lima",
@@ -73,7 +72,6 @@ const authorsData = {
     avatar: "/priscila.webp",
     bio: "Priscila Lima é especialista em carreira e recolocação, fundadora da GPL Consultoria de RH e formada pelo programa Gupy Experts. Com mais de 5 anos de atuação, ajuda profissionais a se posicionarem estrategicamente para conquistar novas oportunidades, com mais de 90% dos clientes recolocados no mercado de trabalho.",
     linkedin: "https://www.linkedin.com/in/admrh-gislaine-priscila-lima/",
-    community: "https://firststeplab.com.br/#leadForm"
   },
   "Isabel Costa": {
     name: "Isabel Costa",
@@ -81,7 +79,13 @@ const authorsData = {
     avatar: "/isabel.webp",
     bio: "Isabel Costa é executiva e consultora sênior com mais de 20 anos de experiência em Recursos Humanos, Cultura Organizacional e ESG, psicóloga pela UNESP e coautora do livro Liderança Humanizada. Já liderou programas que impactaram mais de 700 mil pessoas e mobilizou mais de R$ 65 milhões em investimentos sociais, unindo visão estratégica e olhar humano em decisões de liderança e contratação.",
     linkedin: "https://www.linkedin.com/in/isabel-costa-esg/",
-    community: "https://firststeplab.com.br/#leadForm"
+  },
+  "Kátia Azevedo": {
+    name: "Kátia Azevedo",
+    role: "Estrategista de Marketing e Comunicação • First Step Lab",
+    avatar: "/katia.webp",
+    bio: "Kátia Azevedo é estrategista de marketing e comunicação, com mais de 12 anos de experiência em storytelling, branding e produção de conteúdo multiplataforma, ajudando marcas e profissionais a comunicarem seu valor real.",
+    linkedin: "https://www.linkedin.com/company/domine-as-regras/",
   }
 };
 
@@ -353,8 +357,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>{currentAuthor.bio}</p>
 
         <div class="author-links">
-          <a href={currentAuthor.linkedin} target="_blank">LinkedIn</a>
-          <a href={currentAuthor.community} target="_blank">Comunidade gratuita</a>
+          <a href={currentAuthor.linkedin} target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452z" />
+            </svg>
+            LinkedIn
+          </a>
         </div>
       </div>
     </div>

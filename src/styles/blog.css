@@ -610,14 +610,19 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   padding: 0.85rem 1.6rem;
   border-radius: 999px;
-  background: #3f6c7c; 
+  background: #3f6c7c;
   color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
   transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.author-links a svg {
+  flex-shrink: 0;
 }
 
 .author-links a:hover {
