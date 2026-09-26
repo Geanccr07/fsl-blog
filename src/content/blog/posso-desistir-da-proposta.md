@@ -34,7 +34,7 @@ Se você está passando por isso agora: o que você está sentindo é normal. E 
 
 ## Você pode desistir. A lei não te prende.
 
-Vou ser direto porque é o que você precisa ouvir primeiro: sim, você pode desistir. Sem multa, sem processo trabalhista contra você, sem consequência legal que te impeça de ir embora.
+Vou ser direto porque é o que você precisa ouvir primeiro: sim, você pode desistir. Antes de assinar o contrato, é sem multa, sem processo trabalhista contra você e sem consequência legal que te impeça de ir embora.
 
 A CLT não trata de forma explícita sobre a desistência antes da assinatura do contrato. O que existe é o entendimento de que a relação só se formaliza com a assinatura, e sem contrato assinado não há vínculo empregatício constituído. Aceite por e-mail, por WhatsApp ou verbal gera expectativa, mas não te obriga a assumir a vaga.
 
@@ -64,11 +64,11 @@ Calma, porque essa indenização não é automática. A Justiça do Trabalho ent
 
 Leia o contrato procurando uma cláusula que fale em "direito recíproco de rescisão antecipada". Se ela estiver lá, o artigo 481 da CLT manda aplicar as regras do contrato sem prazo definido. Aí entra o aviso prévio no lugar da indenização: você cumpre o período ou a empresa pode descontar o valor correspondente.
 
-Se o contrato já foi assinado sem prazo definido, sem experiência, a regra é a do pedido de demissão comum, com aviso prévio de 30 dias. Quando a pessoa nem começou a trabalhar, muitas empresas dispensam esse aviso. Peça a dispensa na mesma mensagem em que comunica a saída, e peça que a confirmação venha por escrito.
+Se o contrato que você assinou não tem prazo definido, ou seja, não é de experiência, a regra é a do pedido de demissão comum, com aviso prévio de 30 dias. Quando a pessoa nem começou a trabalhar, muitas empresas dispensam esse aviso. Peça a dispensa na mesma mensagem em que comunica a saída, e peça que a confirmação venha por escrito.
 
 Como você não trabalhou nenhum dia, não há salário a receber. A empresa precisa cancelar a admissão ou dar baixa no registro da sua carteira de trabalho digital, para que ela fique em ordem pro próximo emprego. Depois de uns dias, abra o app da Carteira de Trabalho Digital e confira se o registro sumiu ou foi encerrado.
 
-A mensagem aqui segue a mesma lógica das outras situações, só que com a formalidade que o pedido de demissão pede:
+A base é a mesma da mensagem que mostro mais adiante, só que com a formalidade que o pedido de demissão pede:
 
 > *"Oi [nome], tudo bem? Venho comunicar formalmente meu pedido de demissão do cargo de [cargo], com contrato assinado em [data], antes do início das atividades previsto para [data]. Agradeço muito pelo processo e pela confiança. Peço, se possível, a dispensa do aviso prévio e a confirmação por escrito do cancelamento da admissão. Fico à disposição para assinar o que for necessário."*
 
