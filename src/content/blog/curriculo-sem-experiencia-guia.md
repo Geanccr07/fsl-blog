@@ -1,13 +1,13 @@
 ---
 title: "O que colocar no currículo sem experiência: o guia definitivo"
-description: "Currículo vazio por falta de experiência? Veja exatamente o que colocar em cada seção, com exemplos reais de como chamar atenção do recrutador."
-date: 2025-06-19
+description: "Currículo vazio? Pegue um modelo gratuito pronto pra editar e veja o que colocar em cada seção quando você ainda não tem experiência, com exemplos reais."
+date: 2026-06-19
 category: "curriculo"
 tags: ["primeiro emprego", "como fazer currículo"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
-seoTitle: "Currículo vazio? O que colocar quando não tem experiência"
+seoTitle: "Currículo vazio? Modelo gratuito e o que colocar sem experiência"
 cta_text: "Acessar template gratuito"
 cta_url: "https://firststeplab.com.br/#leadForm"
 audio_url: "/audios/curriculo-sem-experiencia-guia.m4a"
@@ -25,6 +25,8 @@ Isso não é fraqueza. É o reflexo de um mercado que cobra experiência de quem
 A taxa de desemprego entre jovens de 18 a 24 anos ficou em 12% no segundo trimestre de 2025, o dobro da média nacional de 5,6%, segundo dados do IBGE. O mercado melhorou nos últimos anos, mas a dificuldade de entrar pela primeira vez continua sendo real e estrutural.
 
 O ponto é: o problema não é a falta de conteúdo no currículo. É a falta de saber o que mostrar, e como mostrar. Quem está começando tem mais para oferecer do que imagina. O currículo em branco é um problema de perspectiva, não de histórico.
+
+Se você chegou aqui procurando um modelo de currículo pra preencher, a gente tem um pronto, gratuito, pra editar no Canva. Ele fica dentro da comunidade da First Step Lab, junto com o StepCV, a ferramenta que adapta o seu currículo pra cada vaga usando IA, e os nossos guias de LinkedIn e de entrevista. [Acesse o modelo de currículo e os outros materiais gratuitos da FSL](https://firststeplab.com.br/#leadForm). E se quiser entender o que colocar em cada parte do modelo, é exatamente isso que eu mostro no resto do artigo.
 
 ## O que o recrutador realmente quer ver
 

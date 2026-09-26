@@ -1,7 +1,7 @@
 ---
 title: "Fiz a entrevista e não recebi retorno: o que fazer"
 description: "Passou pela entrevista, cumpriu cada etapa, e agora o silêncio. Esse artigo é sobre o que fazer com isso enquanto o processo seletivo não responde."
-date: 2025-05-30
+date: 2026-05-30
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"

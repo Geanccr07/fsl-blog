@@ -1,7 +1,7 @@
 ---
 title: "Como responder 'me fale sobre uma falha sua' na entrevista (sem queimar o filme)"
 description: "A pergunta que mais trava candidatos em entrevistas de emprego, explicada de forma direta. O que falar, o que nunca falar, e por que o 'sou perfeccionista' não convence ninguém."
-date: 2025-06-02
+date: 2026-06-02
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"

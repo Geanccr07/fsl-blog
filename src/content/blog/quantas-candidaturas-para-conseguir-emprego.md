@@ -1,7 +1,7 @@
 ---
 title: "Quantas candidaturas por dia para conseguir emprego? O que ninguém quer ouvir"
 description: "Mandar 30 candidaturas por dia não está funcionando? Descubra por que quantidade sem critério é spam e o que fazer diferente para ter retorno de verdade."
-date: 2025-06-08
+date: 2026-06-08
 category: "candidatura"
 tags: ["processo seletivo", "currículo", "ATS"]
 author: "Gean Carlos"

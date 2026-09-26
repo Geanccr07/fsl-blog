@@ -1,7 +1,7 @@
 ---
 title: "Vagas escondidas: como encontrar oportunidades que a maioria dos candidatos nunca vê"
 description: "Como encontrar vagas escondidas no LinkedIn? Elas existem fora da aba de vagas, o lugar mais concorrido da busca por emprego, com muito menos concorrência pra você."
-date: 2025-05-27
+date: 2026-05-27
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"

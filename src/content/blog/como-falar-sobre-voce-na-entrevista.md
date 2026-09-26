@@ -1,7 +1,7 @@
 ---
 title: "Como falar sobre você na entrevista sem parecer que está lendo um roteiro"
 description: "Travou tentando responder 'me fale sobre você' (ou 'sobre mim') numa entrevista? Veja como transformar suas experiências em respostas que despertam interesse do recrutador, com exemplos práticos."
-date: 2025-06-27
+date: 2026-06-27
 category: "entrevista"
 tags: ["processo seletivo", "dicas de entrevista"]
 author: "Priscila Lima"

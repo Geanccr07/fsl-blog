@@ -1,7 +1,7 @@
 ---
 title: "Por que você não recebe retorno do processo seletivo (e o que fazer)"
 description: "Mandou currículo para dezenas de vagas e nenhum retorno? Entenda o que realmente acontece nos bastidores do processo seletivo e como mudar isso."
-date: 2025-05-17
+date: 2026-05-17
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
 authorImage: "/gean.webp"
