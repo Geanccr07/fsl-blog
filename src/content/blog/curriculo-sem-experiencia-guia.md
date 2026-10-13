@@ -110,7 +110,7 @@ Se estiver com dúvida sobre o que estudar, a resposta está nas vagas. Elas diz
 
 ## Usando a seção de habilidades e ferramentas a seu favor
 
-"Comunicação, organização, proatividade, responsabilidade." Essas palavras aparecem em praticamente todos os currículos sem experiência. Não diferenciam ninguém porque qualquer pessoa escreve qualquer coisa em habilidades.
+"Comunicação, organização, proatividade, responsabilidade." Essas palavras aparecem em praticamente todos os currículos sem experiência. Não diferenciam ninguém porque qualquer pessoa escreve qualquer coisa em habilidades. A Kátia escreveu sobre esse e outros [erros de comunicação no currículo](/erros-de-comunicacao-no-curriculo/).
 
 O que funciona é listar ferramentas reais e habilidades específicas. Mesmo que você só domine o básico, coloque. Não minta, mas também não se subestime. O mercado está cheio de profissionais que se acham menores do que realmente são.
 

@@ -68,9 +68,9 @@ Buscar recolocação não é pra ser tratado de qualquer jeito. Tem muito conte�
 
 Primeiro, anotar as vagas nas quais você se candidatou: empresa, cargo, canal onde encontrou, site onde a candidatura aconteceu, data, próximo passo combinado. Existem várias ferramentas gratuitas que ajudam com isso. Na First Step Lab, por exemplo, temos uma planilha completa de controle de candidaturas com painel de indicadores automáticos, pra você enxergar em que etapa do funil está travando.
 
-Segundo, melhorar a capacidade de fazer networking de verdade, não de forma genérica. Se aprofundar mesmo pra entender qual a melhor forma de abordar um recrutador, alguém sênior da sua área, um amigo pra pedir indicação. Networking não é sair adicionando gente aleatória, mas sim, construir relação com intenção.
+Segundo, melhorar a capacidade de fazer networking de verdade, não de forma genérica. Se aprofundar mesmo pra entender qual a melhor forma de abordar um recrutador, alguém sênior da sua área, um amigo pra pedir indicação. Networking não é sair adicionando gente aleatória, mas sim, construir relação com intenção. Se não sabe por onde começar, leia o guia da Isabel sobre [como fazer networking no LinkedIn](/como-fazer-networking-no-linkedin/).
 
-Terceiro, praticar entrevista simulada pra melhorar a forma como você se vende na frente do recrutador. Vai por mim, tudo isso junto te deixa muito mais perto da vaga do que qualquer "fórmula mágica" que tentam vender por aí.
+Terceiro, praticar entrevista simulada pra melhorar a forma como você se vende na frente do recrutador. Comece pela pergunta que abre quase toda entrevista: a Priscila escreveu um artigo inteiro sobre [como falar sobre você na entrevista](/como-falar-sobre-voce-na-entrevista/). Vai por mim, tudo isso junto te deixa muito mais perto da vaga do que qualquer "fórmula mágica" que tentam vender por aí.
 
 ## Os detalhes que o recrutador nota (e você acha que não importam)
 
