@@ -366,6 +366,34 @@ html {
   margin-bottom: 0.6rem;
 }
 
+.blog-post table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.4rem 0 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--texto-artigo-p);
+}
+
+.blog-post th,
+.blog-post td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--borda-separador);
+}
+
+.blog-post thead th {
+  color: var(--texto-titulo);
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 123, 0, 0.5);
+}
+
+.blog-post tbody td:first-child {
+  color: var(--texto-subtitulo);
+  font-weight: 600;
+}
+
 .blog-post strong {
   color: var(--texto-titulo);
   font-weight: 600;
@@ -693,6 +721,15 @@ html {
   .blog-post ol {
     font-size: 1.0rem;
     line-height: 1.7;
+  }
+
+  .blog-post table {
+    font-size: 0.9rem;
+  }
+
+  .blog-post th,
+  .blog-post td {
+    padding: 0.65rem 0.5rem;
   }
 
   .author-box {
