@@ -31,6 +31,10 @@ html, body {
   
   --borda-header: rgba(0, 0, 0, 0.05);
   --borda-footer: #1f2937;
+
+  --bg-menu: #FFFFFF;
+  --texto-menu: #4B5563;
+  --borda-menu: #E5E7EB;
 }
 
 :root.dark {
@@ -45,6 +49,10 @@ html, body {
   
   --borda-header: rgba(255, 255, 255, 0.08);
   --borda-footer: rgba(255, 255, 255, 0.05);
+
+  --bg-menu: #121722;
+  --texto-menu: #9ca3af;
+  --borda-menu: rgba(255, 255, 255, 0.08);
 }
 
 body {
@@ -128,7 +136,154 @@ header a.active::after {
 
 header a.active {
   font-weight: 600;
-  color: var(--orange-main); 
+  color: var(--orange-main);
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.55rem;
+  margin-left: auto;
+  background: none;
+  border: 0;
+  padding: 0.4rem 0;
+  font: 500 0.95rem 'Poppins', sans-serif;
+  color: var(--texto-principal);
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  color: var(--orange-main);
+}
+
+.menu-toggle svg,
+.menu-fechar svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.menu-veu {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 11, 11, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s;
+  z-index: 190;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(300px, 86vw);
+  background: var(--bg-menu);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 2rem 2rem;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(16px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.menu-fechar {
+  align-self: flex-end;
+  background: none;
+  border: 0;
+  padding: 0.4rem;
+  margin-right: -0.4rem;
+  color: var(--texto-principal);
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.menu-fechar:hover {
+  color: var(--orange-main);
+}
+
+.menu-lateral nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.menu-lateral a {
+  text-decoration: none;
+  color: var(--texto-menu);
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.6rem 0;
+  transition: color 0.2s ease;
+}
+
+.menu-lateral a:hover,
+.menu-lateral a.active {
+  color: var(--texto-principal);
+}
+
+.menu-lateral a.active {
+  font-weight: 600;
+}
+
+.menu-lateral a.nav-destaque {
+  color: var(--orange-main);
+  font-weight: 600;
+  margin-top: 0.75rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--borda-menu);
+}
+
+.menu-lateral a.nav-destaque:hover {
+  color: var(--orange-deep);
+}
+
+body.menu-aberto {
+  overflow: hidden;
+}
+
+body.menu-aberto .menu-veu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-aberto .menu-lateral {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  box-shadow: -16px 0 40px rgba(0, 0, 0, 0.1);
+}
+
+body.menu-aberto .theme-toggle {
+  visibility: hidden;
+}
+
+.tem-menu-lateral header nav > a {
+  display: none;
+}
+
+.tem-menu-lateral .menu-toggle {
+  display: inline-flex;
+}
+
+@media (min-width: 769px) and (max-width: 1320px) {
+  header nav {
+    padding-right: 3.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-veu,
+  .menu-lateral {
+    transition: none;
+  }
 }
 
 /* ==========================================================================
@@ -180,8 +335,10 @@ header a.active {
 }
 
 .footer a:hover { color: var(--orange-main); } 
-.footer .whats-highlight { color: var(--orange-main); font-weight: 600; }
-.footer .whats-highlight:hover { color: #ff9d42; }
+.footer .whats-highlight,
+.footer .footer-destaque { color: var(--orange-main); font-weight: 600; }
+.footer .whats-highlight:hover,
+.footer .footer-destaque:hover { color: #ff9d42; }
 
 .footer-bottom {
   display: flex;
