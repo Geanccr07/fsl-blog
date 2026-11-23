@@ -540,6 +540,8 @@ html {
 }
 
 .post-faq-item summary {
+  position: relative;
+  padding-right: 2rem;
   cursor: pointer;
   font-weight: 600;
   color: var(--texto-titulo);
@@ -552,14 +554,18 @@ html {
 
 .post-faq-item summary::after {
   content: '+';
-  float: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
   color: #ff7b00;
   font-weight: 700;
+  line-height: 1;
+  transform: translateY(-50%);
   transition: transform 0.2s ease;
 }
 
 .post-faq-item[open] summary::after {
-  transform: rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .post-faq-item p {
