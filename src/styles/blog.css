@@ -394,6 +394,57 @@ html {
   font-weight: 600;
 }
 
+@media (max-width: 640px) {
+  .blog-post table.tabela-empilhada,
+  .blog-post .tabela-empilhada tbody,
+  .blog-post .tabela-empilhada tr,
+  .blog-post .tabela-empilhada td {
+    display: block;
+    width: 100%;
+  }
+
+  .blog-post .tabela-empilhada thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .blog-post .tabela-empilhada tbody tr {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--borda-separador);
+  }
+
+  .blog-post .tabela-empilhada tbody tr:first-child {
+    border-top: 2px solid rgba(255, 123, 0, 0.5);
+  }
+
+  .blog-post .tabela-empilhada td {
+    padding: 0.35rem 0;
+    border-bottom: none;
+  }
+
+  .blog-post .tabela-empilhada td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--texto-titulo);
+  }
+
+  .blog-post .tabela-empilhada tbody td:first-child {
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--texto-titulo);
+  }
+
+  .blog-post .tabela-empilhada tbody td:first-child::before {
+    content: none;
+  }
+}
+
 .blog-post strong {
   color: var(--texto-titulo);
   font-weight: 600;
