@@ -3,7 +3,7 @@
 title: "Aceitei uma proposta de emprego e quero desistir: o que acontece?"
 description: "Sim, você pode desistir de uma proposta de emprego antes de assinar o contrato, sem multa. Veja o que muda se já assinou e como comunicar sem queimar seu nome."
 date: 2026-07-05
-category: "candidatura"
+category: "carreira"
 tags: ["processo seletivo", "emprego"]
 author: "Gean Carlos"
 authorRole: "Growth Marketing Analyst | First Step Lab"
@@ -58,7 +58,7 @@ Nem toda desistência tem o mesmo peso. Existem três situações distintas e ca
 
 Pode. Ninguém é obrigado a continuar num emprego, nem num que ainda nem começou. O que muda é o formato: depois da assinatura, você deixa de "recusar uma proposta" e passa a pedir demissão, então a comunicação precisa ser formal, por escrito, com e-mail ou carta. Guarde uma cópia do que você enviou.
 
-A maioria das contratações começa com um contrato de experiência, que é um contrato com prazo definido e pode durar no máximo 90 dias. É justamente nesse tipo de contrato que existe uma regra que pouca gente conhece. Pelo artigo 480 da CLT, quem encerra um contrato com prazo determinado antes da data combinada, sem justa causa, pode ter que indenizar a outra parte pelos prejuízos que isso causou. O valor tem teto: no máximo metade do que você receberia até o fim do contrato.
+A maioria das contratações começa com um contrato de experiência, que é um contrato com prazo definido e pode durar no máximo 90 dias (o mesmo período que a Kátia Azevedo destrincha no guia sobre [o que fazer nos primeiros 90 dias no novo emprego](/primeiros-90-dias-novo-emprego/)). É justamente nesse tipo de contrato que existe uma regra que pouca gente conhece. Pelo artigo 480 da CLT, quem encerra um contrato com prazo determinado antes da data combinada, sem justa causa, pode ter que indenizar a outra parte pelos prejuízos que isso causou. O valor tem teto: no máximo metade do que você receberia até o fim do contrato.
 
 Calma, porque essa indenização não é automática. A Justiça do Trabalho entende que a empresa precisa comprovar que teve um prejuízo real com a sua saída, e o valor não é descontado só porque você pediu pra sair. Na prática, se você avisa antes do primeiro dia de trabalho, fica difícil a empresa demonstrar um prejuízo concreto, já que você nem chegou a ocupar a vaga.
 

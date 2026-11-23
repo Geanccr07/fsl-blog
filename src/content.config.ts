@@ -20,7 +20,7 @@ const blog = defineCollection({
 
     // Categoria fixa (silo temático). Usada pra agrupar pilar + satélites
     // e pra ordenar "conteúdos relacionados" por cluster, não só por tag solta.
-    category: z.enum(['linkedin', 'curriculo', 'candidatura', 'entrevista']),
+    category: z.enum(['linkedin', 'curriculo', 'candidatura', 'entrevista', 'carreira']),
 
     tags: z.array(z.string()).optional(),
 
